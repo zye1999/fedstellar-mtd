@@ -1,1 +1,0 @@
-FROM grafana/loki:latest
