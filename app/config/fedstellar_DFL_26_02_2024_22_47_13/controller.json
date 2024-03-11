@@ -1,0 +1,32 @@
+{
+  "scenario_name": "fedstellar_DFL_26_02_2024_22_47_13",
+  "config": "/fedstellar/app/config/",
+  "logs": "/fedstellar/app/logs/",
+  "models": "/fedstellar/app/models/",
+  "n_nodes": 3,
+  "matrix": [
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ]
+  ],
+  "federation": "DFL",
+  "topology": "Custom",
+  "simulation": true,
+  "env": null,
+  "root_path": "D:\\Study\\uzh\\23HS\\master_thesis\\fedstellar-venv\\fedstellar",
+  "webport": "6060,127.0.0.1",
+  "network_subnet": "192.168.50.1/24",
+  "network_gateway": "192.168.50.1"
+}

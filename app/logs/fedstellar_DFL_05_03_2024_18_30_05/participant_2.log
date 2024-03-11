@@ -1,0 +1,1030 @@
+2024-03-05 18:30:26,881 - 
+╔══════════════════════════╗
+║  Node information        ║
+║  ----------------        ║
+║  ID 2                    ║
+║  IP: 192.168.50.4:45000  ║
+║  Role: aggregator        ║
+╚══════════════════════════╝
+2024-03-05 18:30:26,920 - (192.168.50.4:45000) Starting reporter thread
+2024-03-05 18:30:26,921 - 
+╔═════════════════════════════╗
+║  Mobility information       ║
+║  --------------------       ║
+║  Mobility: False            ║
+║  Mobility type: both        ║
+║  Radius federation: 1000.0  ║
+║  Scheme mobility: random    ║
+║  Each 1 rounds              ║
+╚═════════════════════════════╝
+2024-03-05 18:30:26,921 - [FedAvg] My config is <fedstellar.config.config.Config object at 0x7f704c65ec10>
+2024-03-05 18:30:26,922 - [Krum] My config is <fedstellar.config.config.Config object at 0x7f704c65ec10>
+2024-03-05 18:30:26,922 - [Median] My config is <fedstellar.config.config.Config object at 0x7f704c65ec10>
+2024-03-05 18:30:26,922 - [TrimmedMean] My config is <fedstellar.config.config.Config object at 0x7f704c65ec10>
+2024-03-05 18:30:26,922 - 
+╔═══════════════════════════════════════╗
+║  Defense information                  ║
+║  -------------------                  ║
+║  Reputation system: True              ║
+║  Dynamic topology: False              ║
+║  Dynamic aggregation: True            ║
+║  Dynamic aggregation mode: Proactive  ║
+║  Target aggregation: TrimmedMean      ║
+╚═══════════════════════════════════════╝
+2024-03-05 18:30:26,946 - [Learner] Fixing randomness with seed 42
+2024-03-05 18:30:27,145 - 
+╔══════════════════════════════════╗
+║  Logging information             ║
+║  -------------------             ║
+║  Logging type: FedstellarLogger  ║
+╚══════════════════════════════════╝
+2024-03-05 18:30:27,146 - [FedAvg] My config is <fedstellar.config.config.Config object at 0x7f704c65ec10>
+2024-03-05 18:30:27,146 - 
+╔═════════════════════════════════╗
+║  Additional information         ║
+║  ----------------------         ║
+║  Dataset: MNIST                 ║
+║  IID: True                      ║
+║  Model: MNISTModelMLP           ║
+║  Aggregation algorithm: FedAvg  ║
+║  Node behavior: benign          ║
+╚═════════════════════════════════╝
+2024-03-05 18:30:27,147 - (192.168.50.4:45000) Starting gRPC thread at 192.168.50.4:45000...
+2024-03-05 18:30:27,149 - (192.168.50.4:45000) gRPC started.
+2024-03-05 18:30:27,149 - (192.168.50.4:45000) Starting heartbeater thread
+2024-03-05 18:30:27,149 - (192.168.50.4:45000) Building message with hash 6876848815182147936
+2024-03-05 18:30:27,149 - (192.168.50.4:45000) Starting gossiper thread
+2024-03-05 18:30:29,150 - (192.168.50.4:45000) Building message with hash 8874062257502465543
+2024-03-05 18:30:31,152 - (192.168.50.4:45000) Building message with hash -4918752302997950510
+2024-03-05 18:30:33,153 - (192.168.50.4:45000) Building message with hash 2478482778723782413
+2024-03-05 18:30:35,154 - (192.168.50.4:45000) Building message with hash -7423935368431512904
+2024-03-05 18:30:37,150 - (192.168.50.4:45000) connecting to 192.168.50.2:45000...
+2024-03-05 18:30:37,151 - (192.168.50.4:45000) Attempting to add DIRECT connection 192.168.50.2:45000 (duplicated=False)
+2024-03-05 18:30:37,151 - (192.168.50.4:45000) Adding direct connected neighbor 192.168.50.2:45000
+2024-03-05 18:30:37,155 - (192.168.50.4:45000) Building message with hash 3081446996788557717
+2024-03-05 18:30:38,175 - Error getting GPU usage: No data
+2024-03-05 18:30:39,083 - (192.168.50.4:45000) handshake (gRPC) | from 192.168.50.3:45000
+2024-03-05 18:30:39,084 - (192.168.50.4:45000) Attempting to add DIRECT connection 192.168.50.3:45000 (duplicated=False)
+2024-03-05 18:30:39,084 - (192.168.50.4:45000) Adding direct connected neighbor 192.168.50.3:45000
+2024-03-05 18:30:39,156 - (192.168.50.4:45000) connecting to 192.168.50.3:45000...
+2024-03-05 18:30:39,157 - (192.168.50.4:45000) Building message with hash -3183857449898898834
+2024-03-05 18:30:39,157 - (192.168.50.4:45000) Attempting to add DIRECT connection 192.168.50.3:45000 (duplicated=True)
+2024-03-05 18:30:39,158 - (192.168.50.4:45000) Already direct connected neighbor 192.168.50.3:45000
+2024-03-05 18:30:41,158 - (192.168.50.4:45000) Waiting for gRPC to terminate...
+2024-03-05 18:30:41,162 - (192.168.50.4:45000) Building message with hash 3913618499086781092
+2024-03-05 18:30:43,166 - (192.168.50.4:45000) Building message with hash 2977846451512426460
+2024-03-05 18:30:45,170 - (192.168.50.4:45000) Building message with hash 3788366716629897008
+2024-03-05 18:30:47,174 - (192.168.50.4:45000) Building message with hash -4082753114077376719
+2024-03-05 18:30:48,213 - Error getting GPU usage: Unknown Error
+2024-03-05 18:30:49,179 - (192.168.50.4:45000) Building message with hash -3385980716977114279
+2024-03-05 18:30:51,184 - (192.168.50.4:45000) Building message with hash -9051373060095029610
+2024-03-05 18:30:53,189 - (192.168.50.4:45000) Building message with hash 1009313810404457164
+2024-03-05 18:30:55,193 - (192.168.50.4:45000) Building message with hash -7856979629251408761
+2024-03-05 18:30:57,197 - (192.168.50.4:45000) Building message with hash 7479478178958549715
+2024-03-05 18:30:58,249 - Error getting GPU usage: Unknown Error
+2024-03-05 18:30:59,201 - (192.168.50.4:45000) Building message with hash 3492088581111157212
+2024-03-05 18:31:01,205 - (192.168.50.4:45000) Building message with hash -5356844190023903452
+2024-03-05 18:31:03,209 - (192.168.50.4:45000) Building message with hash 5412125736081151525
+2024-03-05 18:31:05,215 - (192.168.50.4:45000) Building message with hash -3698345133486042280
+2024-03-05 18:31:07,219 - (192.168.50.4:45000) Building message with hash 8097957382076981472
+2024-03-05 18:31:08,268 - Error getting GPU usage: Unknown Error
+2024-03-05 18:31:08,948 - (192.168.50.4:45000) Starting learning thread
+2024-03-05 18:31:08,949 - (192.168.50.4:45000) Starting Federated Learning process...
+2024-03-05 18:31:08,949 - (192.168.50.4:45000) Initial DIRECT neighbors: ['192.168.50.2:45000', '192.168.50.3:45000'] | Initial UNDIRECT participants: []
+2024-03-05 18:31:08,949 - (192.168.50.4:45000) Waiting initialization.
+2024-03-05 18:31:08,969 - (192.168.50.4:45000) add_model (gRPC) | Initializing model (executed by 192.168.50.3:45000) | contributors=[]
+2024-03-05 18:31:08,971 - (192.168.50.4:45000) Gossiping model initialization.
+2024-03-05 18:31:08,971 - (192.168.50.4:45000) __gossip_model_difusion
+2024-03-05 18:31:08,971 - (192.168.50.4:45000) __gossip_model_difusion | Waiting model initialization.
+2024-03-05 18:31:08,972 - (192.168.50.4:45000 Gossip | [] need models --> (node not in self.aggregator.get_aggregated_models()) and (node in self.__train_set)
+2024-03-05 18:31:08,974 - (192.168.50.4:45000) Gossip| Gossip finished. No more nodes need models.
+2024-03-05 18:31:08,974 - (192.168.50.4:45000) add_model (gRPC) | Initializing model (executed by 192.168.50.2:45000) | contributors=[]
+2024-03-05 18:31:08,974 - (192.168.50.4:45000) add_model (gRPC) | Model Weights Initialized
+2024-03-05 18:31:08,977 - (192.168.50.4:45000) Building message with hash -4708940743097097989
+2024-03-05 18:31:08,977 - (192.168.50.4:45000) Broadcasting
+source: "192.168.50.4:45000"
+ttl: 10
+hash: -4708940743097097989
+cmd: "model_initialized"
+--> to ['192.168.50.2:45000', '192.168.50.3:45000']
+2024-03-05 18:31:08,978 - (192.168.50.4:45000) add_model (gRPC) | Model Weights Initialized
+2024-03-05 18:31:08,978 - (192.168.50.4:45000) Building message with hash -8812564625539000467
+2024-03-05 18:31:08,979 - (192.168.50.4:45000) Broadcasting
+source: "192.168.50.4:45000"
+ttl: 10
+hash: -8812564625539000467
+cmd: "model_initialized"
+--> to ['192.168.50.2:45000', '192.168.50.3:45000']
+2024-03-05 18:31:09,223 - (192.168.50.4:45000) Building message with hash -5530836664919758251
+2024-03-05 18:31:11,227 - (192.168.50.4:45000) Building message with hash 7469361540821913768
+2024-03-05 18:31:13,231 - (192.168.50.4:45000) Building message with hash 4682865155335835312
+2024-03-05 18:31:15,235 - (192.168.50.4:45000) Building message with hash 1901058614104289772
+2024-03-05 18:31:17,239 - (192.168.50.4:45000) Building message with hash 537038830681822600
+2024-03-05 18:31:18,293 - Error getting GPU usage: Unknown Error
+2024-03-05 18:31:19,243 - (192.168.50.4:45000) Building message with hash 2935365496454849975
+2024-03-05 18:31:21,246 - (192.168.50.4:45000) Building message with hash 8553093155878966765
+2024-03-05 18:31:23,250 - (192.168.50.4:45000) Building message with hash 7145752374085461025
+2024-03-05 18:31:25,253 - (192.168.50.4:45000) Building message with hash 2882891774572590092
+2024-03-05 18:31:27,257 - (192.168.50.4:45000) Building message with hash 5399540316239850232
+2024-03-05 18:31:28,317 - Error getting GPU usage: Unknown Error
+2024-03-05 18:31:28,949 - (192.168.50.4:45000) Round 0 of 10 started.
+2024-03-05 18:31:28,949 - [Learner] Creating trainer with accelerator: gpu
+2024-03-05 18:31:29,058 - 192.168.50.4:45000 Train set: ['192.168.50.2:45000', '192.168.50.3:45000', '192.168.50.4:45000']
+2024-03-05 18:31:29,058 - 192.168.50.4:45000 Direct neighbors: ['192.168.50.2:45000', '192.168.50.3:45000'] | Undirected neighbors: []
+2024-03-05 18:31:29,059 - [NODE.__train_step] Role.AGGREGATOR process...
+2024-03-05 18:31:29,059 - (192.168.50.4:45000) set_nodes_to_aggregate | Setting nodes to aggregate: ['192.168.50.2:45000', '192.168.50.3:45000', '192.168.50.4:45000']
+2024-03-05 18:31:29,059 - (192.168.50.4:45000) set_nodes_to_aggregate | Clearing __models.
+2024-03-05 18:31:29,059 - (192.168.50.4:45000) set_nodes_to_aggregate | Acquiring __finish_aggregation_lock (timeout=600).
+2024-03-05 18:31:29,060 - (192.168.50.4:45000) Evaluating...
+2024-03-05 18:31:29,060 - [Learner] Creating trainer with accelerator: gpu
+2024-03-05 18:31:30,607 - (192.168.50.4:45000) Building message with hash -5367669638014699910
+2024-03-05 18:31:32,615 - (192.168.50.4:45000) Building message with hash -2345144320331602216
+2024-03-05 18:31:34,622 - (192.168.50.4:45000) Building message with hash -5777746977777027520
+2024-03-05 18:31:36,628 - (192.168.50.4:45000) Building message with hash 37975825189383170
+2024-03-05 18:31:38,373 - Error getting GPU usage: Not Supported
+2024-03-05 18:31:38,636 - (192.168.50.4:45000) Building message with hash 8397286178658911463
+2024-03-05 18:31:40,656 - (192.168.50.4:45000) Building message with hash 5017720493836546904
+2024-03-05 18:31:40,827 - (192.168.50.4:45000) Finished evaluating.
+2024-03-05 18:31:40,827 - (192.168.50.4:45000) Training...
+2024-03-05 18:31:40,827 - [Learner] Creating trainer with accelerator: gpu
+2024-03-05 18:31:42,700 - (192.168.50.4:45000) Building message with hash 3860426462338800462
+2024-03-05 18:31:44,709 - (192.168.50.4:45000) Building message with hash -2244468657226685208
+2024-03-05 18:31:46,714 - (192.168.50.4:45000) Building message with hash 8604034502170018614
+2024-03-05 18:31:48,398 - Error getting GPU usage: Not Supported
+2024-03-05 18:31:48,719 - (192.168.50.4:45000) Building message with hash -7137459703679122329
+2024-03-05 18:31:50,725 - (192.168.50.4:45000) Building message with hash -5813370609288072508
+2024-03-05 18:31:52,731 - (192.168.50.4:45000) Building message with hash 4221697014149126424
+2024-03-05 18:31:54,735 - (192.168.50.4:45000) Building message with hash -993558584350758020
+2024-03-05 18:31:56,741 - (192.168.50.4:45000) Building message with hash 4649047013431405403
+2024-03-05 18:31:58,420 - Error getting GPU usage: Not Supported
+2024-03-05 18:31:58,747 - (192.168.50.4:45000) Building message with hash -5090489389965764956
+2024-03-05 18:32:00,752 - (192.168.50.4:45000) Building message with hash -1652020750727299652
+2024-03-05 18:32:02,757 - (192.168.50.4:45000) Building message with hash 4320735328945388636
+2024-03-05 18:32:04,763 - (192.168.50.4:45000) Building message with hash -2710133989647323119
+2024-03-05 18:32:06,773 - (192.168.50.4:45000) Building message with hash 1351306043534512582
+2024-03-05 18:32:08,465 - Error getting GPU usage: Not Supported
+2024-03-05 18:32:08,778 - (192.168.50.4:45000) Building message with hash -2963000239865305396
+2024-03-05 18:32:10,785 - (192.168.50.4:45000) Building message with hash 1044097309701070473
+2024-03-05 18:32:12,790 - (192.168.50.4:45000) Building message with hash -3060376453083120849
+2024-03-05 18:32:14,795 - (192.168.50.4:45000) Building message with hash 7338095819351723445
+2024-03-05 18:32:16,801 - (192.168.50.4:45000) Building message with hash -4662724904889451047
+2024-03-05 18:32:18,489 - Error getting GPU usage: Not Supported
+2024-03-05 18:32:18,806 - (192.168.50.4:45000) Building message with hash 2739806937867532991
+2024-03-05 18:32:20,813 - (192.168.50.4:45000) Building message with hash -6595942748332988443
+2024-03-05 18:32:22,818 - (192.168.50.4:45000) Building message with hash 2691821120725184472
+2024-03-05 18:32:24,823 - (192.168.50.4:45000) Building message with hash 5184750750869716649
+2024-03-05 18:32:26,829 - (192.168.50.4:45000) Building message with hash -2363832569066791233
+2024-03-05 18:32:28,517 - Error getting GPU usage: Not Supported
+2024-03-05 18:32:28,836 - (192.168.50.4:45000) Building message with hash -4459899841004976514
+2024-03-05 18:32:30,841 - (192.168.50.4:45000) Building message with hash -1784958916415959012
+2024-03-05 18:32:32,846 - (192.168.50.4:45000) Building message with hash 8910114797485609771
+2024-03-05 18:32:34,850 - (192.168.50.4:45000) Building message with hash 4175077365241419332
+2024-03-05 18:32:36,856 - (192.168.50.4:45000) Building message with hash -8524083462329848473
+2024-03-05 18:32:38,544 - Error getting GPU usage: Not Supported
+2024-03-05 18:32:38,861 - (192.168.50.4:45000) Building message with hash 8758444777098035866
+2024-03-05 18:32:40,869 - (192.168.50.4:45000) Building message with hash -6114059384747086930
+2024-03-05 18:32:42,875 - (192.168.50.4:45000) Building message with hash 7411548143523924099
+2024-03-05 18:32:44,881 - (192.168.50.4:45000) Building message with hash 5878377952068993485
+2024-03-05 18:32:46,890 - (192.168.50.4:45000) Building message with hash -2982327629677123876
+2024-03-05 18:32:48,570 - Error getting GPU usage: Not Supported
+2024-03-05 18:32:48,896 - (192.168.50.4:45000) Building message with hash -5502443125606674313
+2024-03-05 18:32:50,902 - (192.168.50.4:45000) Building message with hash 2249542994178522283
+2024-03-05 18:32:52,907 - (192.168.50.4:45000) Building message with hash -273921655440444183
+2024-03-05 18:32:53,799 - (192.168.50.4:45000) add_model (gRPC) | Remote Service using gRPC (executed by 192.168.50.3:45000)
+2024-03-05 18:32:53,801 - (192.168.50.4:45000) add_model (aggregator) | source=192.168.50.3:45000 | __models=dict_keys([]) | contributors=['192.168.50.3:45000'] | train_set=['192.168.50.2:45000', '192.168.50.3:45000', '192.168.50.4:45000'] | get_aggregated_models=[]
+2024-03-05 18:32:53,802 - (192.168.50.4:45000) add_model (aggregator) | Acquiring __agg_lock.
+2024-03-05 18:32:53,802 - (192.168.50.4:45000) add_model (aggregator) | All contributors are in the train set. Adding model.
+2024-03-05 18:32:53,802 - (192.168.50.4:45000) add_model (aggregator) | All contributors are not in the aggregated models. --> Partial aggregation.
+2024-03-05 18:32:53,802 - (192.168.50.4:45000) add_model (aggregator) | Model added (1/3) from ['192.168.50.3:45000']
+2024-03-05 18:32:53,803 - (192.168.50.4:45000) add_model (aggregator) | Releasing __agg_lock.
+2024-03-05 18:32:53,803 - (192.168.50.4:45000) add_model (gRPC) | Models added using local aggregator, now sending models_added using MODELS_AGGREGATED): ['192.168.50.3:45000']
+2024-03-05 18:32:53,803 - (192.168.50.4:45000) Building message with hash -1788650335966126471
+2024-03-05 18:32:53,804 - (192.168.50.4:45000) Broadcasting
+source: "192.168.50.4:45000"
+ttl: 10
+hash: -1788650335966126471
+cmd: "models_aggregated"
+args: "192.168.50.3:45000"
+--> to ['192.168.50.2:45000', '192.168.50.3:45000']
+2024-03-05 18:32:54,489 - (192.168.50.4:45000) add_model (gRPC) | Remote Service using gRPC (executed by 192.168.50.2:45000)
+2024-03-05 18:32:54,491 - (192.168.50.4:45000) add_model (aggregator) | source=192.168.50.2:45000 | __models=dict_keys(['192.168.50.3:45000']) | contributors=['192.168.50.2:45000'] | train_set=['192.168.50.2:45000', '192.168.50.3:45000', '192.168.50.4:45000'] | get_aggregated_models=['192.168.50.3:45000']
+2024-03-05 18:32:54,492 - (192.168.50.4:45000) add_model (aggregator) | Acquiring __agg_lock.
+2024-03-05 18:32:54,492 - (192.168.50.4:45000) add_model (aggregator) | All contributors are in the train set. Adding model.
+2024-03-05 18:32:54,492 - (192.168.50.4:45000) add_model (aggregator) | All contributors are not in the aggregated models. --> Partial aggregation.
+2024-03-05 18:32:54,492 - (192.168.50.4:45000) add_model (aggregator) | Model added (2/3) from ['192.168.50.2:45000']
+2024-03-05 18:32:54,493 - (192.168.50.4:45000) add_model (aggregator) | Releasing __agg_lock.
+2024-03-05 18:32:54,493 - (192.168.50.4:45000) add_model (gRPC) | Models added using local aggregator, now sending models_added using MODELS_AGGREGATED): ['192.168.50.3:45000', '192.168.50.2:45000']
+2024-03-05 18:32:54,493 - (192.168.50.4:45000) Building message with hash -3830958780430585635
+2024-03-05 18:32:54,494 - (192.168.50.4:45000) Broadcasting
+source: "192.168.50.4:45000"
+ttl: 10
+hash: -3830958780430585635
+cmd: "models_aggregated"
+args: "192.168.50.3:45000"
+args: "192.168.50.2:45000"
+--> to ['192.168.50.2:45000', '192.168.50.3:45000']
+2024-03-05 18:32:54,521 - (192.168.50.4:45000) Finished training.
+2024-03-05 18:32:54,522 - (192.168.50.4:45000) add_model (aggregator) | source=192.168.50.4:45000 | __models=dict_keys(['192.168.50.3:45000', '192.168.50.2:45000']) | contributors=['192.168.50.4:45000'] | train_set=['192.168.50.2:45000', '192.168.50.3:45000', '192.168.50.4:45000'] | get_aggregated_models=['192.168.50.3:45000', '192.168.50.2:45000']
+2024-03-05 18:32:54,522 - (192.168.50.4:45000) add_model (aggregator) | Acquiring __agg_lock.
+2024-03-05 18:32:54,522 - (192.168.50.4:45000) add_model (aggregator) | All contributors are in the train set. Adding model.
+2024-03-05 18:32:54,522 - (192.168.50.4:45000) add_model (aggregator) | All contributors are not in the aggregated models. --> Partial aggregation.
+2024-03-05 18:32:54,523 - (192.168.50.4:45000) add_model (aggregator) | Model added (3/3) from ['192.168.50.4:45000']
+2024-03-05 18:32:54,523 - (192.168.50.4:45000) add_model (aggregator) | All models were added. Finishing aggregation.
+2024-03-05 18:32:54,523 - (192.168.50.4:45000) add_model (aggregator) | Releasing __finish_aggregation_lock.
+2024-03-05 18:32:54,523 - (192.168.50.4:45000) add_model (aggregator) | Releasing __agg_lock.
+2024-03-05 18:32:54,523 - (192.168.50.4:45000) Building message with hash 537990801043103284
+2024-03-05 18:32:54,524 - (192.168.50.4:45000) Broadcasting
+source: "192.168.50.4:45000"
+ttl: 10
+hash: 537990801043103284
+cmd: "models_aggregated"
+args: "192.168.50.3:45000"
+args: "192.168.50.2:45000"
+args: "192.168.50.4:45000"
+--> to ['192.168.50.2:45000', '192.168.50.3:45000']
+2024-03-05 18:32:54,525 - (192.168.50.4:45000) __gossip_model_aggregation
+2024-03-05 18:32:54,525 - (192.168.50.4:45000 Gossip | [] need models --> (node not in self.aggregator.get_aggregated_models()) and (node in self.__train_set)
+2024-03-05 18:32:54,526 - (192.168.50.4:45000) Gossip| Gossip finished. No more nodes need models.
+2024-03-05 18:32:54,526 - (192.168.50.4:45000) Waiting aggregation and gossiping model (difusion).
+2024-03-05 18:32:54,526 - (192.168.50.4:45000) wait_and_get_aggregation | Acquiring __finish_aggregation_lock (timeout=600).
+2024-03-05 18:32:54,526 - (192.168.50.4:45000) wait_and_get_aggregation | Releasing __finish_aggregation_lock.
+2024-03-05 18:32:54,526 - (192.168.50.4:45000) wait_and_get_aggregation | Starting aggregation.
+2024-03-05 18:32:54,527 - (192.168.50.4:45000) wait_and_get_aggregation | n_model_aggregated=3 | len(self.__train_set)=3
+2024-03-05 18:32:54,527 - (192.168.50.4:45000) wait_and_get_aggregation | Aggregating models.
+2024-03-05 18:32:54,527 - (192.168.50.4:45000) wait_and_get_aggregation | Aggregating models: dict_keys(['192.168.50.3:45000', '192.168.50.2:45000', '192.168.50.4:45000'])
+2024-03-05 18:32:54,528 - [FedAvg.aggregate] Aggregating models: num=3
+2024-03-05 18:32:54,530 - (192.168.50.4:45000) __wait_aggregated_model | Aggregation done for round 0, including parameters in local model.
+2024-03-05 18:32:54,531 - (192.168.50.4:45000) __wait_aggregated_model | Broadcasting aggregation done for round 0
+2024-03-05 18:32:54,531 - (192.168.50.4:45000) Building message with hash -5532593769059435001
+2024-03-05 18:32:54,531 - (192.168.50.4:45000) Broadcasting
+source: "192.168.50.4:45000"
+ttl: 10
+hash: -5532593769059435001
+cmd: "models_ready"
+args: "0"
+--> to ['192.168.50.2:45000', '192.168.50.3:45000']
+2024-03-05 18:32:54,533 - (192.168.50.4:45000) __gossip_model_difusion
+2024-03-05 18:32:54,533 - (192.168.50.4:45000) __gossip_model_difusion | Waiting model aggregation.
+2024-03-05 18:32:54,533 - (192.168.50.4:45000 Gossip | ['192.168.50.2:45000', '192.168.50.3:45000'] need models --> (node not in self.aggregator.get_aggregated_models()) and (node in self.__train_set)
+2024-03-05 18:32:54,533 - (192.168.50.4:45000) Gossip | last_x_status: [] | j: 0
+2024-03-05 18:32:54,534 - (192.168.50.4:45000) Gossip | Gossiping models to ['192.168.50.3:45000', '192.168.50.2:45000']
+2024-03-05 18:32:54,534 - (192.168.50.4:45000) Gossip | Gossiping model to 192.168.50.3:45000 with contributors: ['192.168.50.3:45000', '192.168.50.2:45000', '192.168.50.4:45000'] and weight: 1
+2024-03-05 18:32:54,535 - (192.168.50.4:45000) Sending model to 192.168.50.3:45000 with round 0: contributors=['192.168.50.3:45000', '192.168.50.2:45000', '192.168.50.4:45000'], weight=1 | size=0.8998193740844727 MB
+2024-03-05 18:32:54,542 - (192.168.50.4:45000) Gossip | Gossiping model to 192.168.50.2:45000 with contributors: ['192.168.50.3:45000', '192.168.50.2:45000', '192.168.50.4:45000'] and weight: 1
+2024-03-05 18:32:54,543 - (192.168.50.4:45000) Sending model to 192.168.50.2:45000 with round 0: contributors=['192.168.50.3:45000', '192.168.50.2:45000', '192.168.50.4:45000'], weight=1 | size=0.8998193740844727 MB
+2024-03-05 18:32:54,914 - (192.168.50.4:45000) Building message with hash 3384828379144747060
+2024-03-05 18:32:56,918 - (192.168.50.4:45000) Building message with hash -753500406452674929
+2024-03-05 18:32:57,567 - (192.168.50.4:45000 Gossip | [] need models --> (node not in self.aggregator.get_aggregated_models()) and (node in self.__train_set)
+2024-03-05 18:32:57,568 - (192.168.50.4:45000) Gossip| Gossip finished. No more nodes need models.
+2024-03-05 18:32:57,568 - (192.168.50.4:45000) Round 0 of 10 finished.
+2024-03-05 18:32:57,568 - (192.168.50.4:45000) clear | Acquiring __agg_lock.
+2024-03-05 18:32:57,569 - (192.168.50.4:45000) clear | Releasing __finish_aggregation_lock.
+2024-03-05 18:32:57,569 - (192.168.50.4:45000) clear | Releasing __agg_lock.
+2024-03-05 18:32:57,581 - (192.168.50.4:45000) Round 1 of 10 started.
+2024-03-05 18:32:57,582 - 192.168.50.4:45000 Train set: ['192.168.50.2:45000', '192.168.50.3:45000', '192.168.50.4:45000']
+2024-03-05 18:32:57,582 - 192.168.50.4:45000 Direct neighbors: ['192.168.50.2:45000', '192.168.50.3:45000'] | Undirected neighbors: []
+2024-03-05 18:32:57,582 - (192.168.50.4:45000) Dynamic aggregation function is enabled for round 1. Randomly select an aggregation function for the next round.
+2024-03-05 18:32:57,582 - [FedAvg] My config is <fedstellar.config.config.Config object at 0x7f704c65ec10>
+2024-03-05 18:32:57,583 - [Krum] My config is <fedstellar.config.config.Config object at 0x7f704c65ec10>
+2024-03-05 18:32:57,583 - [Median] My config is <fedstellar.config.config.Config object at 0x7f704c65ec10>
+2024-03-05 18:32:57,583 - [TrimmedMean] My config is <fedstellar.config.config.Config object at 0x7f704c65ec10>
+2024-03-05 18:32:57,583 - get_aggregated_models current aggregator is: <fedstellar.learning.aggregators.fedavg.FedAvg object at 0x7f70495d3510>
+2024-03-05 18:32:57,583 - get_aggregated_models target_aggregation is: <fedstellar.learning.aggregators.krum.Krum object at 0x7f70204ae5d0>
+2024-03-05 18:32:57,584 - <fedstellar.learning.aggregators.fedavg.FedAvg object at 0x7f70495d3510> aggregated_models_weights: {}
+2024-03-05 18:32:57,584 - (192.168.50.4:45000) set_nodes_to_aggregate | Setting nodes to aggregate: ['192.168.50.2:45000', '192.168.50.3:45000', '192.168.50.4:45000']
+2024-03-05 18:32:57,584 - (192.168.50.4:45000) set_nodes_to_aggregate | Clearing __models.
+2024-03-05 18:32:57,584 - (192.168.50.4:45000) set_nodes_to_aggregate | Acquiring __finish_aggregation_lock (timeout=600).
+2024-03-05 18:32:57,584 - get_aggregated_models current aggregator is: <fedstellar.learning.aggregators.krum.Krum object at 0x7f70204ae5d0>
+2024-03-05 18:32:57,584 - [NODE.__train_step] Role.AGGREGATOR process...
+2024-03-05 18:32:58,591 - Error getting GPU usage: Not Supported
+2024-03-05 18:32:58,923 - (192.168.50.4:45000) Building message with hash -1088448731851852941
+2024-03-05 18:33:00,929 - (192.168.50.4:45000) Building message with hash 4392372262515519091
+2024-03-05 18:33:02,934 - (192.168.50.4:45000) Building message with hash -4085893261459759199
+2024-03-05 18:33:04,939 - (192.168.50.4:45000) Building message with hash 5365211657352724943
+2024-03-05 18:33:06,944 - (192.168.50.4:45000) Building message with hash -4774213258496659518
+2024-03-05 18:33:08,614 - Error getting GPU usage: Not Supported
+2024-03-05 18:33:08,948 - (192.168.50.4:45000) Building message with hash -2627728605118579731
+2024-03-05 18:33:10,953 - (192.168.50.4:45000) Building message with hash -8582152144352657201
+2024-03-05 18:33:12,957 - (192.168.50.4:45000) Building message with hash 258971590129740169
+2024-03-05 18:33:14,961 - (192.168.50.4:45000) Building message with hash 3999570718309531971
+2024-03-05 18:33:16,968 - (192.168.50.4:45000) Building message with hash 5252848709918750799
+2024-03-05 18:33:18,634 - Error getting GPU usage: Not Supported
+2024-03-05 18:33:18,972 - (192.168.50.4:45000) Building message with hash -9093682451151790123
+2024-03-05 18:33:20,976 - (192.168.50.4:45000) Building message with hash 4927583060725646558
+2024-03-05 18:33:22,981 - (192.168.50.4:45000) Building message with hash 8113889540515954961
+2024-03-05 18:33:24,986 - (192.168.50.4:45000) Building message with hash -6216976702669094736
+2024-03-05 18:33:26,991 - (192.168.50.4:45000) Building message with hash -1650016987686755147
+2024-03-05 18:33:28,655 - Error getting GPU usage: Not Supported
+2024-03-05 18:33:28,996 - (192.168.50.4:45000) Building message with hash 7380359706399457946
+2024-03-05 18:33:31,001 - (192.168.50.4:45000) Building message with hash 1645224359003489030
+2024-03-05 18:33:33,006 - (192.168.50.4:45000) Building message with hash 153060187993945486
+2024-03-05 18:33:35,011 - (192.168.50.4:45000) Building message with hash -9102897429701819379
+2024-03-05 18:33:37,017 - (192.168.50.4:45000) Building message with hash 2042813115798252158
+2024-03-05 18:33:38,687 - Error getting GPU usage: Not Supported
+2024-03-05 18:33:39,022 - (192.168.50.4:45000) Building message with hash 81015524444689043
+2024-03-05 18:33:41,027 - (192.168.50.4:45000) Building message with hash 5845412132087104123
+2024-03-05 18:33:43,033 - (192.168.50.4:45000) Building message with hash 3550994564728569566
+2024-03-05 18:33:45,038 - (192.168.50.4:45000) Building message with hash 8111499067978907408
+2024-03-05 18:33:47,043 - (192.168.50.4:45000) Building message with hash -5998270428021791366
+2024-03-05 18:33:48,719 - Error getting GPU usage: Not Supported
+2024-03-05 18:33:49,049 - (192.168.50.4:45000) Building message with hash -1361136260052411463
+2024-03-05 18:33:51,055 - (192.168.50.4:45000) Building message with hash -5796795320961284403
+2024-03-05 18:33:53,061 - (192.168.50.4:45000) Building message with hash -2051912648497186717
+2024-03-05 18:33:55,066 - (192.168.50.4:45000) Building message with hash 1716294041355356172
+2024-03-05 18:33:57,072 - (192.168.50.4:45000) Building message with hash 2493225784744411804
+2024-03-05 18:33:58,750 - Error getting GPU usage: Not Supported
+2024-03-05 18:33:59,078 - (192.168.50.4:45000) Building message with hash -8591224757954130274
+2024-03-05 18:34:01,081 - (192.168.50.4:45000) Building message with hash -5353593877370457154
+2024-03-05 18:34:03,087 - (192.168.50.4:45000) Building message with hash -6307377858620085883
+2024-03-05 18:34:05,091 - (192.168.50.4:45000) Building message with hash -4514239116444083852
+2024-03-05 18:34:07,097 - (192.168.50.4:45000) Building message with hash 6162414507930491788
+2024-03-05 18:34:08,808 - Error getting GPU usage: Not Supported
+2024-03-05 18:34:09,103 - (192.168.50.4:45000) Building message with hash 5544694493439137017
+2024-03-05 18:34:11,108 - (192.168.50.4:45000) Building message with hash -1848161369042625250
+2024-03-05 18:34:13,113 - (192.168.50.4:45000) Building message with hash -7910447629967539740
+2024-03-05 18:34:15,118 - (192.168.50.4:45000) Building message with hash 4697850915727595395
+2024-03-05 18:34:17,124 - (192.168.50.4:45000) Building message with hash 4793077982240051062
+2024-03-05 18:34:18,829 - Error getting GPU usage: Not Supported
+2024-03-05 18:34:19,128 - (192.168.50.4:45000) Building message with hash -7347832632134340724
+2024-03-05 18:34:21,133 - (192.168.50.4:45000) Building message with hash 8912916486595292987
+2024-03-05 18:34:23,138 - (192.168.50.4:45000) Building message with hash 5037100685601269465
+2024-03-05 18:34:25,143 - (192.168.50.4:45000) Building message with hash 4509064424339879604
+2024-03-05 18:34:27,149 - (192.168.50.4:45000) Building message with hash -6795290783398313247
+2024-03-05 18:34:28,860 - Error getting GPU usage: Not Supported
+2024-03-05 18:34:29,154 - (192.168.50.4:45000) Building message with hash -6074458121083989520
+2024-03-05 18:34:31,160 - (192.168.50.4:45000) Building message with hash 1805420246521496763
+2024-03-05 18:34:33,165 - (192.168.50.4:45000) Building message with hash 4663190195468235701
+2024-03-05 18:34:35,169 - (192.168.50.4:45000) Building message with hash -6706601731584330756
+2024-03-05 18:34:37,175 - (192.168.50.4:45000) Building message with hash -1314930418207938699
+2024-03-05 18:34:38,890 - Error getting GPU usage: Not Supported
+2024-03-05 18:34:39,180 - (192.168.50.4:45000) Building message with hash -7973496595045865265
+2024-03-05 18:34:41,186 - (192.168.50.4:45000) Building message with hash -627724596426603273
+2024-03-05 18:34:43,191 - (192.168.50.4:45000) Building message with hash 547423324164631721
+2024-03-05 18:34:45,196 - (192.168.50.4:45000) Building message with hash 7701132535840050675
+2024-03-05 18:34:47,202 - (192.168.50.4:45000) Building message with hash 6138806813695247446
+2024-03-05 18:34:48,922 - Error getting GPU usage: Not Supported
+2024-03-05 18:34:49,208 - (192.168.50.4:45000) Building message with hash 5357565857697314871
+2024-03-05 18:34:51,213 - (192.168.50.4:45000) Building message with hash -5136958738465545243
+2024-03-05 18:34:53,218 - (192.168.50.4:45000) Building message with hash -7463408256799201579
+2024-03-05 18:34:55,223 - (192.168.50.4:45000) Building message with hash -4032079791366313250
+2024-03-05 18:34:57,228 - (192.168.50.4:45000) Building message with hash -59080343723047460
+2024-03-05 18:34:58,953 - Error getting GPU usage: Not Supported
+2024-03-05 18:34:59,234 - (192.168.50.4:45000) Building message with hash 8683854626531272500
+2024-03-05 18:35:01,238 - (192.168.50.4:45000) Building message with hash 3190002465926730394
+2024-03-05 18:35:03,242 - (192.168.50.4:45000) Building message with hash 1746322159695856692
+2024-03-05 18:35:05,250 - (192.168.50.4:45000) Building message with hash 6137233246363264112
+2024-03-05 18:35:07,254 - (192.168.50.4:45000) Building message with hash 159032588237243608
+2024-03-05 18:35:08,987 - Error getting GPU usage: Not Supported
+2024-03-05 18:35:09,260 - (192.168.50.4:45000) Building message with hash -3558391225767911944
+2024-03-05 18:35:11,265 - (192.168.50.4:45000) Building message with hash -2138877974160372087
+2024-03-05 18:35:13,270 - (192.168.50.4:45000) Building message with hash -2065678306802458198
+2024-03-05 18:35:15,278 - (192.168.50.4:45000) Building message with hash -6456813951901462555
+2024-03-05 18:35:17,282 - (192.168.50.4:45000) Building message with hash -7630965025702586352
+2024-03-05 18:35:19,018 - Error getting GPU usage: Not Supported
+2024-03-05 18:35:19,287 - (192.168.50.4:45000) Building message with hash 457923498442831060
+2024-03-05 18:35:21,292 - (192.168.50.4:45000) Building message with hash -9078834928950961444
+2024-03-05 18:35:23,298 - (192.168.50.4:45000) Building message with hash 8117797435073299815
+2024-03-05 18:35:25,303 - (192.168.50.4:45000) Building message with hash 7900222058532346665
+2024-03-05 18:35:27,310 - (192.168.50.4:45000) Building message with hash -440242471135741389
+2024-03-05 18:35:29,069 - Error getting GPU usage: Not Supported
+2024-03-05 18:35:29,316 - (192.168.50.4:45000) Building message with hash 2945940302114702022
+2024-03-05 18:35:31,321 - (192.168.50.4:45000) Building message with hash 4640017517539737521
+2024-03-05 18:35:33,326 - (192.168.50.4:45000) Building message with hash -174502697620851495
+2024-03-05 18:35:35,332 - (192.168.50.4:45000) Building message with hash -5345021467188138118
+2024-03-05 18:35:37,337 - (192.168.50.4:45000) Building message with hash -284723411990071182
+2024-03-05 18:35:39,113 - Error getting GPU usage: Not Supported
+2024-03-05 18:35:39,342 - (192.168.50.4:45000) Building message with hash 3640887811145347942
+2024-03-05 18:35:41,348 - (192.168.50.4:45000) Building message with hash -552010093753581184
+2024-03-05 18:35:43,353 - (192.168.50.4:45000) Building message with hash -891965072173144597
+2024-03-05 18:35:45,359 - (192.168.50.4:45000) Building message with hash -633878652214476169
+2024-03-05 18:35:47,364 - (192.168.50.4:45000) Building message with hash -198121215099472486
+2024-03-05 18:35:49,134 - Error getting GPU usage: Not Supported
+2024-03-05 18:35:49,368 - (192.168.50.4:45000) Building message with hash 2976511935501145609
+2024-03-05 18:35:51,373 - (192.168.50.4:45000) Building message with hash 5674428105212592589
+2024-03-05 18:35:53,379 - (192.168.50.4:45000) Building message with hash -7806998476077357172
+2024-03-05 18:35:55,385 - (192.168.50.4:45000) Building message with hash 1277298111055678061
+2024-03-05 18:35:57,391 - (192.168.50.4:45000) Building message with hash 7311374646544371622
+2024-03-05 18:35:59,164 - Error getting GPU usage: Not Supported
+2024-03-05 18:35:59,396 - (192.168.50.4:45000) Building message with hash -6420443914991911458
+2024-03-05 18:36:01,401 - (192.168.50.4:45000) Building message with hash 1804738464394459890
+2024-03-05 18:36:03,407 - (192.168.50.4:45000) Building message with hash 3265153416444358177
+2024-03-05 18:36:05,412 - (192.168.50.4:45000) Building message with hash -6754305981687505393
+2024-03-05 18:36:07,418 - (192.168.50.4:45000) Building message with hash 388823018671243911
+2024-03-05 18:36:09,185 - Error getting GPU usage: Not Supported
+2024-03-05 18:36:09,423 - (192.168.50.4:45000) Building message with hash -1143809692305896452
+2024-03-05 18:36:11,429 - (192.168.50.4:45000) Building message with hash 2599214569532124311
+2024-03-05 18:36:13,434 - (192.168.50.4:45000) Building message with hash 4985102111353962937
+2024-03-05 18:36:15,440 - (192.168.50.4:45000) Building message with hash -6700350760998472200
+2024-03-05 18:36:17,445 - (192.168.50.4:45000) Building message with hash 9067941342900322790
+2024-03-05 18:36:19,226 - Error getting GPU usage: Not Supported
+2024-03-05 18:36:19,451 - (192.168.50.4:45000) Building message with hash -5311182421485846357
+2024-03-05 18:36:21,456 - (192.168.50.4:45000) Building message with hash -5960000350299912362
+2024-03-05 18:36:23,462 - (192.168.50.4:45000) Building message with hash -3181152052957473218
+2024-03-05 18:36:25,468 - (192.168.50.4:45000) Building message with hash 6435226193475124105
+2024-03-05 18:36:27,473 - (192.168.50.4:45000) Building message with hash -7481172560721752658
+2024-03-05 18:36:29,247 - Error getting GPU usage: Not Supported
+2024-03-05 18:36:29,478 - (192.168.50.4:45000) Building message with hash 7716796931872184503
+2024-03-05 18:36:31,483 - (192.168.50.4:45000) Building message with hash 908213476400013847
+2024-03-05 18:36:33,488 - (192.168.50.4:45000) Building message with hash 3589503235037618058
+2024-03-05 18:36:35,492 - (192.168.50.4:45000) Building message with hash -6833254953348406067
+2024-03-05 18:36:37,498 - (192.168.50.4:45000) Building message with hash 7668954052280304317
+2024-03-05 18:36:39,268 - Error getting GPU usage: Not Supported
+2024-03-05 18:36:39,503 - (192.168.50.4:45000) Building message with hash 2747599494235261028
+2024-03-05 18:36:41,509 - (192.168.50.4:45000) Building message with hash -6987024832247036180
+2024-03-05 18:36:43,514 - (192.168.50.4:45000) Building message with hash -5144839257534700588
+2024-03-05 18:36:45,519 - (192.168.50.4:45000) Building message with hash -4087175463452218264
+2024-03-05 18:36:47,524 - (192.168.50.4:45000) Building message with hash -6004933455864651277
+2024-03-05 18:36:49,299 - Error getting GPU usage: Not Supported
+2024-03-05 18:36:49,530 - (192.168.50.4:45000) Building message with hash 5770633294465973278
+2024-03-05 18:36:51,537 - (192.168.50.4:45000) Building message with hash 4666398813499476189
+2024-03-05 18:36:53,542 - (192.168.50.4:45000) Building message with hash 3831617129924066517
+2024-03-05 18:36:55,547 - (192.168.50.4:45000) Building message with hash 2457524593081014689
+2024-03-05 18:36:57,553 - (192.168.50.4:45000) Building message with hash 5012785890781228199
+2024-03-05 18:36:59,339 - Error getting GPU usage: Not Supported
+2024-03-05 18:36:59,557 - (192.168.50.4:45000) Building message with hash 7392381098165610765
+2024-03-05 18:37:01,563 - (192.168.50.4:45000) Building message with hash -8459308339815427036
+2024-03-05 18:37:03,569 - (192.168.50.4:45000) Building message with hash 5995961832020254936
+2024-03-05 18:37:05,575 - (192.168.50.4:45000) Building message with hash 4478195157351741963
+2024-03-05 18:37:07,580 - (192.168.50.4:45000) Building message with hash -3970589051909720158
+2024-03-05 18:37:09,365 - Error getting GPU usage: Not Supported
+2024-03-05 18:37:09,584 - (192.168.50.4:45000) Building message with hash 3406628586672573337
+2024-03-05 18:37:11,589 - (192.168.50.4:45000) Building message with hash 6461477133125958365
+2024-03-05 18:37:13,596 - (192.168.50.4:45000) Building message with hash 5574329618985835676
+2024-03-05 18:37:15,601 - (192.168.50.4:45000) Building message with hash -1357925034912859415
+2024-03-05 18:37:17,606 - (192.168.50.4:45000) Building message with hash 3210553259465222001
+2024-03-05 18:37:19,394 - Error getting GPU usage: Not Supported
+2024-03-05 18:37:19,612 - (192.168.50.4:45000) Building message with hash 3525600353657620272
+2024-03-05 18:37:21,617 - (192.168.50.4:45000) Building message with hash 7848882029950234938
+2024-03-05 18:37:23,621 - (192.168.50.4:45000) Building message with hash 457913987747723573
+2024-03-05 18:37:25,627 - (192.168.50.4:45000) Building message with hash 6571713239071248676
+2024-03-05 18:37:27,633 - (192.168.50.4:45000) Building message with hash 4847243930194167672
+2024-03-05 18:37:29,426 - Error getting GPU usage: Not Supported
+2024-03-05 18:37:29,639 - (192.168.50.4:45000) Building message with hash -4010773166323339949
+2024-03-05 18:37:31,644 - (192.168.50.4:45000) Building message with hash 1181861866913322393
+2024-03-05 18:37:33,649 - (192.168.50.4:45000) Building message with hash -3623030974552656637
+2024-03-05 18:37:35,654 - (192.168.50.4:45000) Building message with hash 4390710223337420744
+2024-03-05 18:37:37,660 - (192.168.50.4:45000) Building message with hash -9062625443888995313
+2024-03-05 18:37:39,469 - Error getting GPU usage: Not Supported
+2024-03-05 18:37:39,665 - (192.168.50.4:45000) Building message with hash -3320650022192763557
+2024-03-05 18:37:41,672 - (192.168.50.4:45000) Building message with hash -190959262705896399
+2024-03-05 18:37:43,677 - (192.168.50.4:45000) Building message with hash 7777895329044751929
+2024-03-05 18:37:45,682 - (192.168.50.4:45000) Building message with hash 7420611906270116159
+2024-03-05 18:37:47,688 - (192.168.50.4:45000) Building message with hash -8801245153869324434
+2024-03-05 18:37:49,493 - Error getting GPU usage: Not Supported
+2024-03-05 18:37:49,693 - (192.168.50.4:45000) Building message with hash 7586176888564815330
+2024-03-05 18:37:51,699 - (192.168.50.4:45000) Building message with hash 5597382736186049963
+2024-03-05 18:37:53,705 - (192.168.50.4:45000) Building message with hash 4024495281341492425
+2024-03-05 18:37:55,711 - (192.168.50.4:45000) Building message with hash -3613886812494348008
+2024-03-05 18:37:57,717 - (192.168.50.4:45000) Building message with hash -54673085008753130
+2024-03-05 18:37:59,520 - Error getting GPU usage: Not Supported
+2024-03-05 18:37:59,723 - (192.168.50.4:45000) Building message with hash -3210983746506932789
+2024-03-05 18:38:01,728 - (192.168.50.4:45000) Building message with hash -7248577723001724174
+2024-03-05 18:38:03,734 - (192.168.50.4:45000) Building message with hash -6825051834845717211
+2024-03-05 18:38:05,740 - (192.168.50.4:45000) Building message with hash -6342158416402795106
+2024-03-05 18:38:07,746 - (192.168.50.4:45000) Building message with hash -1667726874402770354
+2024-03-05 18:38:09,554 - Error getting GPU usage: Not Supported
+2024-03-05 18:38:09,752 - (192.168.50.4:45000) Building message with hash 2070650096331973165
+2024-03-05 18:38:11,757 - (192.168.50.4:45000) Building message with hash 4036681819790305796
+2024-03-05 18:38:13,762 - (192.168.50.4:45000) Building message with hash 6562633343294355167
+2024-03-05 18:38:15,769 - (192.168.50.4:45000) Building message with hash 7229040415503028150
+2024-03-05 18:38:17,774 - (192.168.50.4:45000) Building message with hash 6706826894978307443
+2024-03-05 18:38:19,594 - Error getting GPU usage: Not Supported
+2024-03-05 18:38:19,780 - (192.168.50.4:45000) Building message with hash 3999426988237011992
+2024-03-05 18:38:21,787 - (192.168.50.4:45000) Building message with hash -3550765113801838390
+2024-03-05 18:38:23,792 - (192.168.50.4:45000) Building message with hash -9181232832248828152
+2024-03-05 18:38:25,798 - (192.168.50.4:45000) Building message with hash -3860605802870741673
+2024-03-05 18:38:27,803 - (192.168.50.4:45000) Building message with hash 6669752769857828572
+2024-03-05 18:38:29,614 - Error getting GPU usage: Not Supported
+2024-03-05 18:38:29,808 - (192.168.50.4:45000) Building message with hash 4941017538072025334
+2024-03-05 18:38:31,813 - (192.168.50.4:45000) Building message with hash -6892590599809416575
+2024-03-05 18:38:33,818 - (192.168.50.4:45000) Building message with hash 1576661357404208436
+2024-03-05 18:38:35,824 - (192.168.50.4:45000) Building message with hash 6845222158594557661
+2024-03-05 18:38:37,829 - (192.168.50.4:45000) Building message with hash 2352878585089373248
+2024-03-05 18:38:39,636 - Error getting GPU usage: Not Supported
+2024-03-05 18:38:39,835 - (192.168.50.4:45000) Building message with hash -4827376474716674686
+2024-03-05 18:38:41,840 - (192.168.50.4:45000) Building message with hash 2824019192120589602
+2024-03-05 18:38:43,845 - (192.168.50.4:45000) Building message with hash 8694215430261736878
+2024-03-05 18:38:45,851 - (192.168.50.4:45000) Building message with hash 3097937950528550654
+2024-03-05 18:38:47,857 - (192.168.50.4:45000) Building message with hash 4390038959525003599
+2024-03-05 18:38:49,666 - Error getting GPU usage: Not Supported
+2024-03-05 18:38:49,862 - (192.168.50.4:45000) Building message with hash 3473281026634545356
+2024-03-05 18:38:51,867 - (192.168.50.4:45000) Building message with hash 5045415359397604702
+2024-03-05 18:38:53,872 - (192.168.50.4:45000) Building message with hash 8011832632940067140
+2024-03-05 18:38:55,877 - (192.168.50.4:45000) Building message with hash 2958122506928419871
+2024-03-05 18:38:57,881 - (192.168.50.4:45000) Building message with hash -2448482464084143138
+2024-03-05 18:38:59,699 - Error getting GPU usage: Not Supported
+2024-03-05 18:38:59,887 - (192.168.50.4:45000) Building message with hash -4958083758675093257
+2024-03-05 18:39:01,892 - (192.168.50.4:45000) Building message with hash 8874464059419776318
+2024-03-05 18:39:03,898 - (192.168.50.4:45000) Building message with hash -670968057559158475
+2024-03-05 18:39:05,903 - (192.168.50.4:45000) Building message with hash -1299039452930560094
+2024-03-05 18:39:07,908 - (192.168.50.4:45000) Building message with hash 4209873963146101710
+2024-03-05 18:39:09,720 - Error getting GPU usage: Not Supported
+2024-03-05 18:39:09,914 - (192.168.50.4:45000) Building message with hash -9179333360855090568
+2024-03-05 18:39:11,920 - (192.168.50.4:45000) Building message with hash -7683644270368206021
+2024-03-05 18:39:13,925 - (192.168.50.4:45000) Building message with hash 7523806785448359482
+2024-03-05 18:39:15,930 - (192.168.50.4:45000) Building message with hash -7790856561829777928
+2024-03-05 18:39:17,935 - (192.168.50.4:45000) Building message with hash 6820666075405945198
+2024-03-05 18:39:19,752 - Error getting GPU usage: Not Supported
+2024-03-05 18:39:19,940 - (192.168.50.4:45000) Building message with hash -1264776687922044225
+2024-03-05 18:39:21,945 - (192.168.50.4:45000) Building message with hash 680814844759637245
+2024-03-05 18:39:23,950 - (192.168.50.4:45000) Building message with hash 5420912310884554757
+2024-03-05 18:39:25,956 - (192.168.50.4:45000) Building message with hash -4756500530735707867
+2024-03-05 18:39:27,963 - (192.168.50.4:45000) Building message with hash 2456251121014197146
+2024-03-05 18:39:29,785 - Error getting GPU usage: Not Supported
+2024-03-05 18:39:29,970 - (192.168.50.4:45000) Building message with hash -9005381371882097627
+2024-03-05 18:39:31,973 - (192.168.50.4:45000) Building message with hash 7529541990673823895
+2024-03-05 18:39:33,978 - (192.168.50.4:45000) Building message with hash -7860904601009019784
+2024-03-05 18:39:35,983 - (192.168.50.4:45000) Building message with hash -7924322799763048188
+2024-03-05 18:39:37,989 - (192.168.50.4:45000) Building message with hash 8248161360889484580
+2024-03-05 18:39:39,818 - Error getting GPU usage: Not Supported
+2024-03-05 18:39:39,993 - (192.168.50.4:45000) Building message with hash 488023769500454936
+2024-03-05 18:39:41,999 - (192.168.50.4:45000) Building message with hash -845468862766355845
+2024-03-05 18:39:44,006 - (192.168.50.4:45000) Building message with hash 1661115665174855716
+2024-03-05 18:39:46,012 - (192.168.50.4:45000) Building message with hash 7659736689594469174
+2024-03-05 18:39:48,018 - (192.168.50.4:45000) Building message with hash 4610695400850566198
+2024-03-05 18:39:49,849 - Error getting GPU usage: Not Supported
+2024-03-05 18:39:50,023 - (192.168.50.4:45000) Building message with hash -8389964511054850439
+2024-03-05 18:39:52,029 - (192.168.50.4:45000) Building message with hash 5897231880893149112
+2024-03-05 18:39:54,036 - (192.168.50.4:45000) Building message with hash -7516424073045023714
+2024-03-05 18:39:56,041 - (192.168.50.4:45000) Building message with hash -2432689782351043988
+2024-03-05 18:39:58,047 - (192.168.50.4:45000) Building message with hash -3227926710406109360
+2024-03-05 18:39:59,880 - Error getting GPU usage: Not Supported
+2024-03-05 18:40:00,052 - (192.168.50.4:45000) Building message with hash -7600694226765827809
+2024-03-05 18:40:02,057 - (192.168.50.4:45000) Building message with hash 4146330528124790582
+2024-03-05 18:40:04,062 - (192.168.50.4:45000) Building message with hash -3180253332004383398
+2024-03-05 18:40:06,067 - (192.168.50.4:45000) Building message with hash 8655107766705240548
+2024-03-05 18:40:08,072 - (192.168.50.4:45000) Building message with hash 1613993494265301734
+2024-03-05 18:40:09,934 - Error getting GPU usage: Not Supported
+2024-03-05 18:40:10,079 - (192.168.50.4:45000) Building message with hash 1894750026982608977
+2024-03-05 18:40:12,084 - (192.168.50.4:45000) Building message with hash -2770668608109069940
+2024-03-05 18:40:14,091 - (192.168.50.4:45000) Building message with hash 4809888003777563690
+2024-03-05 18:40:16,096 - (192.168.50.4:45000) Building message with hash 3868761944116344759
+2024-03-05 18:40:18,102 - (192.168.50.4:45000) Building message with hash -364531020405107744
+2024-03-05 18:40:19,952 - Error getting GPU usage: Not Supported
+2024-03-05 18:40:20,108 - (192.168.50.4:45000) Building message with hash -682470843588534995
+2024-03-05 18:40:22,113 - (192.168.50.4:45000) Building message with hash -5759929993956755537
+2024-03-05 18:40:24,119 - (192.168.50.4:45000) Building message with hash -3868168395748112218
+2024-03-05 18:40:26,124 - (192.168.50.4:45000) Building message with hash -5136438749646415197
+2024-03-05 18:40:28,129 - (192.168.50.4:45000) Building message with hash -6301179572326813359
+2024-03-05 18:40:29,982 - Error getting GPU usage: Not Supported
+2024-03-05 18:40:30,135 - (192.168.50.4:45000) Building message with hash 2548163167584073158
+2024-03-05 18:40:32,141 - (192.168.50.4:45000) Building message with hash 792624970842346576
+2024-03-05 18:40:34,146 - (192.168.50.4:45000) Building message with hash -531466443290419268
+2024-03-05 18:40:36,152 - (192.168.50.4:45000) Building message with hash -4960817626483682471
+2024-03-05 18:40:38,158 - (192.168.50.4:45000) Building message with hash 1508626245922470837
+2024-03-05 18:40:40,014 - Error getting GPU usage: Not Supported
+2024-03-05 18:40:40,162 - (192.168.50.4:45000) Building message with hash -3700193248366523457
+2024-03-05 18:40:42,169 - (192.168.50.4:45000) Building message with hash -7856105816552095452
+2024-03-05 18:40:44,173 - (192.168.50.4:45000) Building message with hash -1328831431431868805
+2024-03-05 18:40:46,179 - (192.168.50.4:45000) Building message with hash 3960977379259120555
+2024-03-05 18:40:48,185 - (192.168.50.4:45000) Building message with hash 7678159753440099484
+2024-03-05 18:40:50,066 - Error getting GPU usage: Not Supported
+2024-03-05 18:40:50,189 - (192.168.50.4:45000) Building message with hash 7799367644120758083
+2024-03-05 18:40:52,196 - (192.168.50.4:45000) Building message with hash -491477555614644738
+2024-03-05 18:40:54,202 - (192.168.50.4:45000) Building message with hash -5536655604404464112
+2024-03-05 18:40:56,207 - (192.168.50.4:45000) Building message with hash -8149554620681631055
+2024-03-05 18:40:58,213 - (192.168.50.4:45000) Building message with hash 717374085493552561
+2024-03-05 18:41:00,095 - Error getting GPU usage: Not Supported
+2024-03-05 18:41:00,218 - (192.168.50.4:45000) Building message with hash 6527217761256580850
+2024-03-05 18:41:02,223 - (192.168.50.4:45000) Building message with hash -2139661399849362297
+2024-03-05 18:41:04,229 - (192.168.50.4:45000) Building message with hash 6718627524459750155
+2024-03-05 18:41:06,235 - (192.168.50.4:45000) Building message with hash 1015694316531259698
+2024-03-05 18:41:08,239 - (192.168.50.4:45000) Building message with hash -3876306381276513877
+2024-03-05 18:41:10,124 - Error getting GPU usage: Not Supported
+2024-03-05 18:41:10,245 - (192.168.50.4:45000) Building message with hash 351429648714303635
+2024-03-05 18:41:12,250 - (192.168.50.4:45000) Building message with hash 1293566414354734139
+2024-03-05 18:41:14,255 - (192.168.50.4:45000) Building message with hash 1744921964157698188
+2024-03-05 18:41:16,262 - (192.168.50.4:45000) Building message with hash 27260216464934878
+2024-03-05 18:41:18,268 - (192.168.50.4:45000) Building message with hash -1705384672043523844
+2024-03-05 18:41:20,147 - Error getting GPU usage: Not Supported
+2024-03-05 18:41:20,273 - (192.168.50.4:45000) Building message with hash -2128192738972877485
+2024-03-05 18:41:22,278 - (192.168.50.4:45000) Building message with hash -4504059253746492776
+2024-03-05 18:41:24,283 - (192.168.50.4:45000) Building message with hash -4417681868038043391
+2024-03-05 18:41:26,289 - (192.168.50.4:45000) Building message with hash 810635347513248842
+2024-03-05 18:41:28,294 - (192.168.50.4:45000) Building message with hash 68157202528009879
+2024-03-05 18:41:30,205 - Error getting GPU usage: Not Supported
+2024-03-05 18:41:30,300 - (192.168.50.4:45000) Building message with hash -2842810201340742123
+2024-03-05 18:41:32,305 - (192.168.50.4:45000) Building message with hash -8809641858418216611
+2024-03-05 18:41:34,311 - (192.168.50.4:45000) Building message with hash 2390031726463482251
+2024-03-05 18:41:36,316 - (192.168.50.4:45000) Building message with hash 3170760241055936263
+2024-03-05 18:41:38,321 - (192.168.50.4:45000) Building message with hash -5624293954018200792
+2024-03-05 18:41:40,232 - Error getting GPU usage: Not Supported
+2024-03-05 18:41:40,327 - (192.168.50.4:45000) Building message with hash 3715819488546332519
+2024-03-05 18:41:42,332 - (192.168.50.4:45000) Building message with hash 7033776237604555703
+2024-03-05 18:41:44,338 - (192.168.50.4:45000) Building message with hash -7529478563440699844
+2024-03-05 18:41:46,343 - (192.168.50.4:45000) Building message with hash 3667864275484266683
+2024-03-05 18:41:48,349 - (192.168.50.4:45000) Building message with hash 7839984765916770755
+2024-03-05 18:41:50,262 - Error getting GPU usage: Not Supported
+2024-03-05 18:41:50,354 - (192.168.50.4:45000) Building message with hash 7994724438215792256
+2024-03-05 18:41:52,363 - (192.168.50.4:45000) Building message with hash 3738031146207405732
+2024-03-05 18:41:54,367 - (192.168.50.4:45000) Building message with hash -3598308246578821250
+2024-03-05 18:41:56,373 - (192.168.50.4:45000) Building message with hash 2037193197862560570
+2024-03-05 18:41:58,378 - (192.168.50.4:45000) Building message with hash -1530036631654202875
+2024-03-05 18:42:00,292 - Error getting GPU usage: Not Supported
+2024-03-05 18:42:00,385 - (192.168.50.4:45000) Building message with hash 8666007618028079860
+2024-03-05 18:42:02,391 - (192.168.50.4:45000) Building message with hash -3038118973384768859
+2024-03-05 18:42:04,396 - (192.168.50.4:45000) Building message with hash 798747824068834785
+2024-03-05 18:42:06,402 - (192.168.50.4:45000) Building message with hash 5737495132741209740
+2024-03-05 18:42:08,408 - (192.168.50.4:45000) Building message with hash 6196062222712402151
+2024-03-05 18:42:10,347 - Error getting GPU usage: Not Supported
+2024-03-05 18:42:10,413 - (192.168.50.4:45000) Building message with hash -2263874174610869418
+2024-03-05 18:42:12,418 - (192.168.50.4:45000) Building message with hash 5210831477558412260
+2024-03-05 18:42:14,425 - (192.168.50.4:45000) Building message with hash -5153833949685360827
+2024-03-05 18:42:16,430 - (192.168.50.4:45000) Building message with hash 6767408191740067590
+2024-03-05 18:42:18,436 - (192.168.50.4:45000) Building message with hash -3576309283222452150
+2024-03-05 18:42:20,377 - Error getting GPU usage: Not Supported
+2024-03-05 18:42:20,441 - (192.168.50.4:45000) Building message with hash 2413720266779970168
+2024-03-05 18:42:22,446 - (192.168.50.4:45000) Building message with hash 4880093863667527775
+2024-03-05 18:42:24,454 - (192.168.50.4:45000) Building message with hash 6071334779940165605
+2024-03-05 18:42:26,460 - (192.168.50.4:45000) Building message with hash 2146760310330986187
+2024-03-05 18:42:28,465 - (192.168.50.4:45000) Building message with hash 897844456814073365
+2024-03-05 18:42:30,406 - Error getting GPU usage: Not Supported
+2024-03-05 18:42:30,470 - (192.168.50.4:45000) Building message with hash -197753792866002831
+2024-03-05 18:42:32,476 - (192.168.50.4:45000) Building message with hash -4061876867798486090
+2024-03-05 18:42:34,481 - (192.168.50.4:45000) Building message with hash -5338952324592842696
+2024-03-05 18:42:36,486 - (192.168.50.4:45000) Building message with hash -7010141281534118313
+2024-03-05 18:42:38,490 - (192.168.50.4:45000) Building message with hash -5694024050870257186
+2024-03-05 18:42:40,432 - Error getting GPU usage: Not Supported
+2024-03-05 18:42:40,495 - (192.168.50.4:45000) Building message with hash 2240488299808698743
+2024-03-05 18:42:42,500 - (192.168.50.4:45000) Building message with hash 1790220850072846112
+2024-03-05 18:42:44,506 - (192.168.50.4:45000) Building message with hash -6087801839654931453
+2024-03-05 18:42:46,511 - (192.168.50.4:45000) Building message with hash 2882631814299559171
+2024-03-05 18:42:48,518 - (192.168.50.4:45000) Building message with hash 5547403421794775651
+2024-03-05 18:42:50,483 - Error getting GPU usage: Not Supported
+2024-03-05 18:42:50,523 - (192.168.50.4:45000) Building message with hash -682841629136174313
+2024-03-05 18:42:52,528 - (192.168.50.4:45000) Building message with hash 1673396368457064260
+2024-03-05 18:42:54,533 - (192.168.50.4:45000) Building message with hash 4616621061315769023
+2024-03-05 18:42:56,538 - (192.168.50.4:45000) Building message with hash -3544606473630116073
+2024-03-05 18:42:58,543 - (192.168.50.4:45000) Building message with hash 4283042576311648488
+2024-03-05 18:43:00,514 - Error getting GPU usage: Not Supported
+2024-03-05 18:43:00,548 - (192.168.50.4:45000) Building message with hash -2149455220527058562
+2024-03-05 18:43:02,554 - (192.168.50.4:45000) Building message with hash 3515397613196603718
+2024-03-05 18:43:04,559 - (192.168.50.4:45000) Building message with hash -9177903082231368740
+2024-03-05 18:43:06,565 - (192.168.50.4:45000) Building message with hash 5055242397120397343
+2024-03-05 18:43:08,570 - (192.168.50.4:45000) Building message with hash -912588812511446985
+2024-03-05 18:43:10,532 - Error getting GPU usage: Not Supported
+2024-03-05 18:43:10,577 - (192.168.50.4:45000) Building message with hash 8424780382624329419
+2024-03-05 18:43:12,582 - (192.168.50.4:45000) Building message with hash -302841606887949336
+2024-03-05 18:43:14,587 - (192.168.50.4:45000) Building message with hash 8050236310873027307
+2024-03-05 18:43:16,594 - (192.168.50.4:45000) Building message with hash 1453601648917584794
+2024-03-05 18:43:18,601 - (192.168.50.4:45000) Building message with hash 7013204084575765109
+2024-03-05 18:43:20,565 - Error getting GPU usage: Not Supported
+2024-03-05 18:43:20,606 - (192.168.50.4:45000) Building message with hash -7817311874021207926
+2024-03-05 18:43:22,611 - (192.168.50.4:45000) Building message with hash -5317609989703183562
+2024-03-05 18:43:24,616 - (192.168.50.4:45000) Building message with hash -2419204989184144366
+2024-03-05 18:43:26,622 - (192.168.50.4:45000) Building message with hash -4245122676041336817
+2024-03-05 18:43:28,627 - (192.168.50.4:45000) Building message with hash 1300891865213372087
+2024-03-05 18:43:30,621 - Error getting GPU usage: Not Supported
+2024-03-05 18:43:30,632 - (192.168.50.4:45000) Building message with hash -7616422298232167823
+2024-03-05 18:43:32,637 - (192.168.50.4:45000) Building message with hash -6803179947303306526
+2024-03-05 18:43:34,642 - (192.168.50.4:45000) Building message with hash -7366898801570410776
+2024-03-05 18:43:36,648 - (192.168.50.4:45000) Building message with hash 3873907737787880224
+2024-03-05 18:43:38,655 - (192.168.50.4:45000) Building message with hash -738421305538836509
+2024-03-05 18:43:40,651 - Error getting GPU usage: Not Supported
+2024-03-05 18:43:40,660 - (192.168.50.4:45000) Building message with hash 8572253618673493527
+2024-03-05 18:43:42,665 - (192.168.50.4:45000) Building message with hash 5901165255301647506
+2024-03-05 18:43:44,672 - (192.168.50.4:45000) Building message with hash -3887126903054362583
+2024-03-05 18:43:46,676 - (192.168.50.4:45000) Building message with hash -559320675167718807
+2024-03-05 18:43:48,681 - (192.168.50.4:45000) Building message with hash 7483411891735699536
+2024-03-05 18:43:50,680 - Error getting GPU usage: Not Supported
+2024-03-05 18:43:50,687 - (192.168.50.4:45000) Building message with hash -1955678993011811978
+2024-03-05 18:43:52,691 - (192.168.50.4:45000) Building message with hash 7706776390603273920
+2024-03-05 18:43:54,696 - (192.168.50.4:45000) Building message with hash 4280781298758950180
+2024-03-05 18:43:56,703 - (192.168.50.4:45000) Building message with hash -1864651455885222332
+2024-03-05 18:43:58,708 - (192.168.50.4:45000) Building message with hash -427075826268408599
+2024-03-05 18:44:00,709 - Error getting GPU usage: Not Supported
+2024-03-05 18:44:00,713 - (192.168.50.4:45000) Building message with hash 7478409975858315118
+2024-03-05 18:44:02,718 - (192.168.50.4:45000) Building message with hash 1473293013818107498
+2024-03-05 18:44:04,723 - (192.168.50.4:45000) Building message with hash -7865938543602014187
+2024-03-05 18:44:06,728 - (192.168.50.4:45000) Building message with hash 2672486392195243709
+2024-03-05 18:44:08,733 - (192.168.50.4:45000) Building message with hash -286920078150771548
+2024-03-05 18:44:10,739 - (192.168.50.4:45000) Building message with hash 2940083324933013901
+2024-03-05 18:44:10,765 - Error getting GPU usage: Not Supported
+2024-03-05 18:44:12,744 - (192.168.50.4:45000) Building message with hash 2946195089466908633
+2024-03-05 18:44:14,749 - (192.168.50.4:45000) Building message with hash 3417682484936365957
+2024-03-05 18:44:16,755 - (192.168.50.4:45000) Building message with hash -6936577773585280306
+2024-03-05 18:44:18,762 - (192.168.50.4:45000) Building message with hash 4153949465293810009
+2024-03-05 18:44:20,766 - (192.168.50.4:45000) Building message with hash 6582250140510929701
+2024-03-05 18:44:20,791 - Error getting GPU usage: Not Supported
+2024-03-05 18:44:22,771 - (192.168.50.4:45000) Building message with hash 4727060217435331476
+2024-03-05 18:44:24,777 - (192.168.50.4:45000) Building message with hash -9154914084391339017
+2024-03-05 18:44:26,781 - (192.168.50.4:45000) Building message with hash 1247197359276023546
+2024-03-05 18:44:28,786 - (192.168.50.4:45000) Building message with hash 4458113885025643361
+2024-03-05 18:44:30,793 - (192.168.50.4:45000) Building message with hash -3554851799693128475
+2024-03-05 18:44:30,821 - Error getting GPU usage: Not Supported
+2024-03-05 18:44:32,797 - (192.168.50.4:45000) Building message with hash -4766358965733660011
+2024-03-05 18:44:34,803 - (192.168.50.4:45000) Building message with hash -8331610115578808922
+2024-03-05 18:44:36,808 - (192.168.50.4:45000) Building message with hash 8456095980063608656
+2024-03-05 18:44:38,813 - (192.168.50.4:45000) Building message with hash 7891843582270546437
+2024-03-05 18:44:40,820 - (192.168.50.4:45000) Building message with hash 2078628459299457919
+2024-03-05 18:44:40,852 - Error getting GPU usage: Not Supported
+2024-03-05 18:44:42,826 - (192.168.50.4:45000) Building message with hash -741268314042094954
+2024-03-05 18:44:44,830 - (192.168.50.4:45000) Building message with hash 6178983925482710303
+2024-03-05 18:44:46,836 - (192.168.50.4:45000) Building message with hash -4673929664467470976
+2024-03-05 18:44:48,841 - (192.168.50.4:45000) Building message with hash -4645863098333860786
+2024-03-05 18:44:50,846 - (192.168.50.4:45000) Building message with hash 6282471716940206081
+2024-03-05 18:44:50,907 - Error getting GPU usage: Not Supported
+2024-03-05 18:44:52,851 - (192.168.50.4:45000) Building message with hash 6522213162754457875
+2024-03-05 18:44:54,857 - (192.168.50.4:45000) Building message with hash 4259705505707008666
+2024-03-05 18:44:56,861 - (192.168.50.4:45000) Building message with hash -2170617370831174563
+2024-03-05 18:44:58,866 - (192.168.50.4:45000) Building message with hash -7935167040937724527
+2024-03-05 18:45:00,872 - (192.168.50.4:45000) Building message with hash -7189174256399781732
+2024-03-05 18:45:00,924 - Error getting GPU usage: Not Supported
+2024-03-05 18:45:02,879 - (192.168.50.4:45000) Building message with hash -1831470161546499739
+2024-03-05 18:45:04,883 - (192.168.50.4:45000) Building message with hash -1178840074063436169
+2024-03-05 18:45:06,889 - (192.168.50.4:45000) Building message with hash 3307876583237145619
+2024-03-05 18:45:08,894 - (192.168.50.4:45000) Building message with hash 2515937617918098584
+2024-03-05 18:45:10,900 - (192.168.50.4:45000) Building message with hash 4688701526934118798
+2024-03-05 18:45:10,954 - Error getting GPU usage: Not Supported
+2024-03-05 18:45:12,905 - (192.168.50.4:45000) Building message with hash -673443057339510214
+2024-03-05 18:45:14,910 - (192.168.50.4:45000) Building message with hash 6951535456293813282
+2024-03-05 18:45:16,916 - (192.168.50.4:45000) Building message with hash -5703518014742998739
+2024-03-05 18:45:18,923 - (192.168.50.4:45000) Building message with hash -3017817051627139496
+2024-03-05 18:45:20,927 - (192.168.50.4:45000) Building message with hash 2485681562172392707
+2024-03-05 18:45:20,986 - Error getting GPU usage: Not Supported
+2024-03-05 18:45:22,933 - (192.168.50.4:45000) Building message with hash 2639078126675827061
+2024-03-05 18:45:24,939 - (192.168.50.4:45000) Building message with hash 9182713293415293840
+2024-03-05 18:45:26,945 - (192.168.50.4:45000) Building message with hash 425802517051472457
+2024-03-05 18:45:28,951 - (192.168.50.4:45000) Building message with hash 2935964938730652586
+2024-03-05 18:45:30,955 - (192.168.50.4:45000) Building message with hash 3419985944959417888
+2024-03-05 18:45:31,044 - Error getting GPU usage: Not Supported
+2024-03-05 18:45:32,960 - (192.168.50.4:45000) Building message with hash -6831039481978123823
+2024-03-05 18:45:34,966 - (192.168.50.4:45000) Building message with hash -1492850031951006868
+2024-03-05 18:45:36,973 - (192.168.50.4:45000) Building message with hash -4216958327805504787
+2024-03-05 18:45:38,981 - (192.168.50.4:45000) Building message with hash 1771229871143884680
+2024-03-05 18:45:40,985 - (192.168.50.4:45000) Building message with hash 5924649970161918289
+2024-03-05 18:45:41,075 - Error getting GPU usage: Not Supported
+2024-03-05 18:45:42,990 - (192.168.50.4:45000) Building message with hash -1246166633316724349
+2024-03-05 18:45:44,996 - (192.168.50.4:45000) Building message with hash 7571593950442598688
+2024-03-05 18:45:47,001 - (192.168.50.4:45000) Building message with hash -2858398711137140309
+2024-03-05 18:45:49,007 - (192.168.50.4:45000) Building message with hash 4977646119718808981
+2024-03-05 18:45:51,012 - (192.168.50.4:45000) Building message with hash 6254656628442985625
+2024-03-05 18:45:51,108 - Error getting GPU usage: Not Supported
+2024-03-05 18:45:53,017 - (192.168.50.4:45000) Building message with hash 2821103510615514281
+2024-03-05 18:45:55,023 - (192.168.50.4:45000) Building message with hash -140234564792077830
+2024-03-05 18:45:57,027 - (192.168.50.4:45000) Building message with hash 7402232148845354479
+2024-03-05 18:45:59,033 - (192.168.50.4:45000) Building message with hash 6663747158369153186
+2024-03-05 18:46:01,039 - (192.168.50.4:45000) Building message with hash -5471166053086309505
+2024-03-05 18:46:01,138 - Error getting GPU usage: Not Supported
+2024-03-05 18:46:03,045 - (192.168.50.4:45000) Building message with hash -2813559934352663883
+2024-03-05 18:46:05,050 - (192.168.50.4:45000) Building message with hash -6927236382821951445
+2024-03-05 18:46:07,056 - (192.168.50.4:45000) Building message with hash 9137016078460198981
+2024-03-05 18:46:09,061 - (192.168.50.4:45000) Building message with hash 6757831169855561781
+2024-03-05 18:46:11,066 - (192.168.50.4:45000) Building message with hash -2952801834587357576
+2024-03-05 18:46:11,197 - Error getting GPU usage: Not Supported
+2024-03-05 18:46:13,070 - (192.168.50.4:45000) Building message with hash -6110818980009202519
+2024-03-05 18:46:15,075 - (192.168.50.4:45000) Building message with hash 2449528259767611740
+2024-03-05 18:46:17,081 - (192.168.50.4:45000) Building message with hash -7678736726993151198
+2024-03-05 18:46:19,086 - (192.168.50.4:45000) Building message with hash -812311065334081158
+2024-03-05 18:46:21,092 - (192.168.50.4:45000) Building message with hash 4164585643756268407
+2024-03-05 18:46:21,222 - Error getting GPU usage: Not Supported
+2024-03-05 18:46:23,097 - (192.168.50.4:45000) Building message with hash 6726862257047895006
+2024-03-05 18:46:25,103 - (192.168.50.4:45000) Building message with hash -149989736369338260
+2024-03-05 18:46:27,108 - (192.168.50.4:45000) Building message with hash 4763396597000988235
+2024-03-05 18:46:29,114 - (192.168.50.4:45000) Building message with hash -1195126779354391885
+2024-03-05 18:46:31,119 - (192.168.50.4:45000) Building message with hash -5450958603450020544
+2024-03-05 18:46:31,253 - Error getting GPU usage: Not Supported
+2024-03-05 18:46:33,123 - (192.168.50.4:45000) Building message with hash 3179872452892625611
+2024-03-05 18:46:35,129 - (192.168.50.4:45000) Building message with hash -7036143068268033667
+2024-03-05 18:46:37,136 - (192.168.50.4:45000) Building message with hash -702403953869512534
+2024-03-05 18:46:39,140 - (192.168.50.4:45000) Building message with hash 6115895471720356392
+2024-03-05 18:46:41,146 - (192.168.50.4:45000) Building message with hash -1247652705924138242
+2024-03-05 18:46:41,281 - Error getting GPU usage: Not Supported
+2024-03-05 18:46:43,151 - (192.168.50.4:45000) Building message with hash 7609164910280933429
+2024-03-05 18:46:45,156 - (192.168.50.4:45000) Building message with hash -3495137827819961792
+2024-03-05 18:46:47,161 - (192.168.50.4:45000) Building message with hash -6602848222457993880
+2024-03-05 18:46:49,167 - (192.168.50.4:45000) Building message with hash -9196580239706682350
+2024-03-05 18:46:51,172 - (192.168.50.4:45000) Building message with hash 1638422136984132164
+2024-03-05 18:46:51,325 - Error getting GPU usage: Not Supported
+2024-03-05 18:46:53,179 - (192.168.50.4:45000) Building message with hash 8789336798385127267
+2024-03-05 18:46:55,185 - (192.168.50.4:45000) Building message with hash 1137378836223871272
+2024-03-05 18:46:57,190 - (192.168.50.4:45000) Building message with hash 3281929484046656983
+2024-03-05 18:46:59,195 - (192.168.50.4:45000) Building message with hash 6520973488203047675
+2024-03-05 18:47:01,200 - (192.168.50.4:45000) Building message with hash 9084825489175054510
+2024-03-05 18:47:01,351 - Error getting GPU usage: Not Supported
+2024-03-05 18:47:03,205 - (192.168.50.4:45000) Building message with hash 77463830685279832
+2024-03-05 18:47:05,210 - (192.168.50.4:45000) Building message with hash -1345584278542392415
+2024-03-05 18:47:07,216 - (192.168.50.4:45000) Building message with hash -3535566508547178174
+2024-03-05 18:47:09,221 - (192.168.50.4:45000) Building message with hash -5360523984259594001
+2024-03-05 18:47:11,226 - (192.168.50.4:45000) Building message with hash 5445231529738324149
+2024-03-05 18:47:11,384 - Error getting GPU usage: Not Supported
+2024-03-05 18:47:13,231 - (192.168.50.4:45000) Building message with hash -2136716325174635515
+2024-03-05 18:47:15,236 - (192.168.50.4:45000) Building message with hash 5447935152529393056
+2024-03-05 18:47:17,242 - (192.168.50.4:45000) Building message with hash -2776163093014749219
+2024-03-05 18:47:19,247 - (192.168.50.4:45000) Building message with hash 4743186670098739466
+2024-03-05 18:47:21,252 - (192.168.50.4:45000) Building message with hash 7370139841553294622
+2024-03-05 18:47:21,415 - Error getting GPU usage: Not Supported
+2024-03-05 18:47:23,259 - (192.168.50.4:45000) Building message with hash -979748800979495496
+2024-03-05 18:47:25,265 - (192.168.50.4:45000) Building message with hash -6747919689527869990
+2024-03-05 18:47:27,270 - (192.168.50.4:45000) Building message with hash 3037733675210666744
+2024-03-05 18:47:29,275 - (192.168.50.4:45000) Building message with hash 2187868432056041989
+2024-03-05 18:47:31,280 - (192.168.50.4:45000) Building message with hash 934932805883615539
+2024-03-05 18:47:31,468 - Error getting GPU usage: Not Supported
+2024-03-05 18:47:33,284 - (192.168.50.4:45000) Building message with hash -6071042204664509563
+2024-03-05 18:47:35,289 - (192.168.50.4:45000) Building message with hash -3680791747270229886
+2024-03-05 18:47:37,295 - (192.168.50.4:45000) Building message with hash 8495454108363353471
+2024-03-05 18:47:39,300 - (192.168.50.4:45000) Building message with hash -6495974741164850774
+2024-03-05 18:47:41,306 - (192.168.50.4:45000) Building message with hash 5431417776235110790
+2024-03-05 18:47:41,494 - Error getting GPU usage: Not Supported
+2024-03-05 18:47:43,311 - (192.168.50.4:45000) Building message with hash 8750540195873298441
+2024-03-05 18:47:45,315 - (192.168.50.4:45000) Building message with hash 410482316471752073
+2024-03-05 18:47:47,321 - (192.168.50.4:45000) Building message with hash -1877835573926699070
+2024-03-05 18:47:49,326 - (192.168.50.4:45000) Building message with hash -2154508399633766428
+2024-03-05 18:47:51,332 - (192.168.50.4:45000) Building message with hash 7127709965336805312
+2024-03-05 18:47:51,524 - Error getting GPU usage: Not Supported
+2024-03-05 18:47:53,337 - (192.168.50.4:45000) Building message with hash 6945427557754246815
+2024-03-05 18:47:55,341 - (192.168.50.4:45000) Building message with hash -8666561211886084121
+2024-03-05 18:47:57,347 - (192.168.50.4:45000) Building message with hash -2283625552684119585
+2024-03-05 18:47:59,352 - (192.168.50.4:45000) Building message with hash 8910415810695619036
+2024-03-05 18:48:01,358 - (192.168.50.4:45000) Building message with hash -758831816490901156
+2024-03-05 18:48:01,554 - Error getting GPU usage: Not Supported
+2024-03-05 18:48:03,363 - (192.168.50.4:45000) Building message with hash -5970282217385410211
+2024-03-05 18:48:05,367 - (192.168.50.4:45000) Building message with hash 4626487676805685467
+2024-03-05 18:48:07,373 - (192.168.50.4:45000) Building message with hash -3655166261314977548
+2024-03-05 18:48:09,379 - (192.168.50.4:45000) Building message with hash -9209452115216503913
+2024-03-05 18:48:11,384 - (192.168.50.4:45000) Building message with hash 5262879366902164793
+2024-03-05 18:48:11,608 - Error getting GPU usage: Not Supported
+2024-03-05 18:48:13,390 - (192.168.50.4:45000) Building message with hash -4444489515388132757
+2024-03-05 18:48:15,396 - (192.168.50.4:45000) Building message with hash -8857629458834788420
+2024-03-05 18:48:17,401 - (192.168.50.4:45000) Building message with hash -7072129761842762514
+2024-03-05 18:48:19,406 - (192.168.50.4:45000) Building message with hash 2004002598893662435
+2024-03-05 18:48:21,411 - (192.168.50.4:45000) Building message with hash 6309634282903453608
+2024-03-05 18:48:21,626 - Error getting GPU usage: Not Supported
+2024-03-05 18:48:23,417 - (192.168.50.4:45000) Building message with hash -5358715023659251986
+2024-03-05 18:48:25,422 - (192.168.50.4:45000) Building message with hash 5713263298203621485
+2024-03-05 18:48:27,427 - (192.168.50.4:45000) Building message with hash -6730688111819292301
+2024-03-05 18:48:29,432 - (192.168.50.4:45000) Building message with hash 4184090050156883124
+2024-03-05 18:48:31,437 - (192.168.50.4:45000) Building message with hash -6930730451639553786
+2024-03-05 18:48:31,645 - Error getting GPU usage: Not Supported
+2024-03-05 18:48:33,443 - (192.168.50.4:45000) Building message with hash 4519484482430210119
+2024-03-05 18:48:35,448 - (192.168.50.4:45000) Building message with hash -4620535563771500628
+2024-03-05 18:48:37,453 - (192.168.50.4:45000) Building message with hash 2173711249699760989
+2024-03-05 18:48:39,458 - (192.168.50.4:45000) Building message with hash -3245326684452554871
+2024-03-05 18:48:41,464 - (192.168.50.4:45000) Building message with hash -5881392032896204464
+2024-03-05 18:48:41,665 - Error getting GPU usage: Not Supported
+2024-03-05 18:48:43,469 - (192.168.50.4:45000) Building message with hash -4819290283051429377
+2024-03-05 18:48:45,474 - (192.168.50.4:45000) Building message with hash 5968055969854846924
+2024-03-05 18:48:47,480 - (192.168.50.4:45000) Building message with hash -2092560523128728642
+2024-03-05 18:48:49,485 - (192.168.50.4:45000) Building message with hash -5601291424921865275
+2024-03-05 18:48:51,490 - (192.168.50.4:45000) Building message with hash -8236133265488808395
+2024-03-05 18:48:51,718 - Error getting GPU usage: Not Supported
+2024-03-05 18:48:53,496 - (192.168.50.4:45000) Building message with hash 7112106005911282910
+2024-03-05 18:48:55,501 - (192.168.50.4:45000) Building message with hash -7489544205606621014
+2024-03-05 18:48:57,507 - (192.168.50.4:45000) Building message with hash 2304458387235145479
+2024-03-05 18:48:59,512 - (192.168.50.4:45000) Building message with hash -7484747024295845395
+2024-03-05 18:49:01,518 - (192.168.50.4:45000) Building message with hash 8526950037162696220
+2024-03-05 18:49:01,747 - Error getting GPU usage: Not Supported
+2024-03-05 18:49:03,523 - (192.168.50.4:45000) Building message with hash 4557754619919728988
+2024-03-05 18:49:05,527 - (192.168.50.4:45000) Building message with hash -1617029547970069588
+2024-03-05 18:49:07,533 - (192.168.50.4:45000) Building message with hash -8803080296855754594
+2024-03-05 18:49:09,538 - (192.168.50.4:45000) Building message with hash 8084972496382922426
+2024-03-05 18:49:11,544 - (192.168.50.4:45000) Building message with hash 9214713578350534708
+2024-03-05 18:49:11,768 - Error getting GPU usage: Not Supported
+2024-03-05 18:49:13,550 - (192.168.50.4:45000) Building message with hash -8866863073168410996
+2024-03-05 18:49:15,555 - (192.168.50.4:45000) Building message with hash -356543701784132661
+2024-03-05 18:49:17,560 - (192.168.50.4:45000) Building message with hash -1805580420141862694
+2024-03-05 18:49:19,567 - (192.168.50.4:45000) Building message with hash -6310834255852338383
+2024-03-05 18:49:21,572 - (192.168.50.4:45000) Building message with hash 2857634983557115536
+2024-03-05 18:49:21,798 - Error getting GPU usage: Not Supported
+2024-03-05 18:49:23,578 - (192.168.50.4:45000) Building message with hash 814785179703338877
+2024-03-05 18:49:25,583 - (192.168.50.4:45000) Building message with hash -1045031497827624556
+2024-03-05 18:49:27,588 - (192.168.50.4:45000) Building message with hash -3481298447945165788
+2024-03-05 18:49:29,595 - (192.168.50.4:45000) Building message with hash 6694815885114130981
+2024-03-05 18:49:31,600 - (192.168.50.4:45000) Building message with hash 8027228400977519134
+2024-03-05 18:49:31,848 - Error getting GPU usage: Not Supported
+2024-03-05 18:49:33,606 - (192.168.50.4:45000) Building message with hash 6960965342829481807
+2024-03-05 18:49:35,611 - (192.168.50.4:45000) Building message with hash 2705065391081421266
+2024-03-05 18:49:37,616 - (192.168.50.4:45000) Building message with hash 719894701949416898
+2024-03-05 18:49:39,621 - (192.168.50.4:45000) Building message with hash 1548612410798659561
+2024-03-05 18:49:41,626 - (192.168.50.4:45000) Building message with hash 6742268757602700161
+2024-03-05 18:49:41,876 - Error getting GPU usage: Not Supported
+2024-03-05 18:49:43,631 - (192.168.50.4:45000) Building message with hash 2872744302482470831
+2024-03-05 18:49:45,636 - (192.168.50.4:45000) Building message with hash 1403874891846610808
+2024-03-05 18:49:47,641 - (192.168.50.4:45000) Building message with hash 1415391801744110963
+2024-03-05 18:49:49,647 - (192.168.50.4:45000) Building message with hash 6305592562554426478
+2024-03-05 18:49:51,653 - (192.168.50.4:45000) Building message with hash 6004714616242522772
+2024-03-05 18:49:51,907 - Error getting GPU usage: Not Supported
+2024-03-05 18:49:53,659 - (192.168.50.4:45000) Building message with hash 5659146142517446198
+2024-03-05 18:49:55,664 - (192.168.50.4:45000) Building message with hash -654404246278739426
+2024-03-05 18:49:57,670 - (192.168.50.4:45000) Building message with hash -2879289721695993599
+2024-03-05 18:49:59,675 - (192.168.50.4:45000) Building message with hash -6858939955359472839
+2024-03-05 18:50:01,680 - (192.168.50.4:45000) Building message with hash -1023359330738809431
+2024-03-05 18:50:01,938 - Error getting GPU usage: Not Supported
+2024-03-05 18:50:03,685 - (192.168.50.4:45000) Building message with hash -7287994948285010661
+2024-03-05 18:50:05,690 - (192.168.50.4:45000) Building message with hash 6176512547848999885
+2024-03-05 18:50:07,695 - (192.168.50.4:45000) Building message with hash 1817198858599548929
+2024-03-05 18:50:09,701 - (192.168.50.4:45000) Building message with hash -1352929059806415885
+2024-03-05 18:50:11,707 - (192.168.50.4:45000) Building message with hash -5780080786696835141
+2024-03-05 18:50:11,991 - Error getting GPU usage: Not Supported
+2024-03-05 18:50:13,711 - (192.168.50.4:45000) Building message with hash 1986899267636144518
+2024-03-05 18:50:15,717 - (192.168.50.4:45000) Building message with hash 1468610916611325126
+2024-03-05 18:50:17,722 - (192.168.50.4:45000) Building message with hash -5891574297653100495
+2024-03-05 18:50:19,726 - (192.168.50.4:45000) Building message with hash -8512717867817068734
+2024-03-05 18:50:21,733 - (192.168.50.4:45000) Building message with hash 1382638244838833801
+2024-03-05 18:50:22,016 - Error getting GPU usage: Not Supported
+2024-03-05 18:50:23,738 - (192.168.50.4:45000) Building message with hash -6017239194313608738
+2024-03-05 18:50:25,743 - (192.168.50.4:45000) Building message with hash 306361934408346477
+2024-03-05 18:50:27,749 - (192.168.50.4:45000) Building message with hash -1535322505182416732
+2024-03-05 18:50:29,755 - (192.168.50.4:45000) Building message with hash 1100429209503291967
+2024-03-05 18:50:31,761 - (192.168.50.4:45000) Building message with hash 2458395018279581470
+2024-03-05 18:50:32,036 - Error getting GPU usage: Not Supported
+2024-03-05 18:50:33,766 - (192.168.50.4:45000) Building message with hash -4726492684655529183
+2024-03-05 18:50:35,771 - (192.168.50.4:45000) Building message with hash 2500520801436899623
+2024-03-05 18:50:37,776 - (192.168.50.4:45000) Building message with hash 5425046041983079802
+2024-03-05 18:50:39,781 - (192.168.50.4:45000) Building message with hash -6829312997611213524
+2024-03-05 18:50:41,786 - (192.168.50.4:45000) Building message with hash -3835219258939647756
+2024-03-05 18:50:42,067 - Error getting GPU usage: Not Supported
+2024-03-05 18:50:43,793 - (192.168.50.4:45000) Building message with hash 2077342860579861349
+2024-03-05 18:50:45,797 - (192.168.50.4:45000) Building message with hash 1756446607112576448
+2024-03-05 18:50:47,802 - (192.168.50.4:45000) Building message with hash -4411365446632786017
+2024-03-05 18:50:49,808 - (192.168.50.4:45000) Building message with hash 7623264284900628379
+2024-03-05 18:50:51,815 - (192.168.50.4:45000) Building message with hash -1006478453841439672
+2024-03-05 18:50:52,135 - Error getting GPU usage: Not Supported
+2024-03-05 18:50:53,821 - (192.168.50.4:45000) Building message with hash 9090163835098303644
+2024-03-05 18:50:55,827 - (192.168.50.4:45000) Building message with hash -7452560886642985869
+2024-03-05 18:50:57,833 - (192.168.50.4:45000) Building message with hash -6445385768963445577
+2024-03-05 18:50:59,838 - (192.168.50.4:45000) Building message with hash 96018077978579303
+2024-03-05 18:51:01,844 - (192.168.50.4:45000) Building message with hash -401786394106591413
+2024-03-05 18:51:02,152 - Error getting GPU usage: Not Supported
+2024-03-05 18:51:03,848 - (192.168.50.4:45000) Building message with hash -3198941492560657555
+2024-03-05 18:51:05,854 - (192.168.50.4:45000) Building message with hash 8414835477882647062
+2024-03-05 18:51:07,860 - (192.168.50.4:45000) Building message with hash -1216594857361809321
+2024-03-05 18:51:09,865 - (192.168.50.4:45000) Building message with hash 4442009074372451505
+2024-03-05 18:51:11,870 - (192.168.50.4:45000) Building message with hash 6544521293474007497
+2024-03-05 18:51:12,178 - Error getting GPU usage: Not Supported
+2024-03-05 18:51:13,874 - (192.168.50.4:45000) Building message with hash 2419027736025372783
+2024-03-05 18:51:15,879 - (192.168.50.4:45000) Building message with hash 5252106660482017547
+2024-03-05 18:51:17,884 - (192.168.50.4:45000) Building message with hash 2930260668642489667
+2024-03-05 18:51:19,890 - (192.168.50.4:45000) Building message with hash -4341039884911642747
+2024-03-05 18:51:21,895 - (192.168.50.4:45000) Building message with hash 1797179582273290471
+2024-03-05 18:51:22,229 - Error getting GPU usage: Not Supported
+2024-03-05 18:51:23,900 - (192.168.50.4:45000) Building message with hash 6109417865650250292
+2024-03-05 18:51:25,905 - (192.168.50.4:45000) Building message with hash 1846661163384334719
+2024-03-05 18:51:27,911 - (192.168.50.4:45000) Building message with hash -4202956539177917763
+2024-03-05 18:51:29,916 - (192.168.50.4:45000) Building message with hash 9157386186760751390
+2024-03-05 18:51:31,921 - (192.168.50.4:45000) Building message with hash 170496133390212228
+2024-03-05 18:51:32,259 - Error getting GPU usage: Not Supported
+2024-03-05 18:51:33,926 - (192.168.50.4:45000) Building message with hash 1697678544525944544
+2024-03-05 18:51:35,931 - (192.168.50.4:45000) Building message with hash 8977587043871621125
+2024-03-05 18:51:37,937 - (192.168.50.4:45000) Building message with hash -6747824071550075631
+2024-03-05 18:51:39,942 - (192.168.50.4:45000) Building message with hash -1086073379265984288
+2024-03-05 18:51:41,947 - (192.168.50.4:45000) Building message with hash -2220235870078027473
+2024-03-05 18:51:42,294 - Error getting GPU usage: Not Supported
+2024-03-05 18:51:43,953 - (192.168.50.4:45000) Building message with hash 7277635401356224034
+2024-03-05 18:51:45,958 - (192.168.50.4:45000) Building message with hash 2854444615053789184
+2024-03-05 18:51:47,963 - (192.168.50.4:45000) Building message with hash 7833106766783770277
+2024-03-05 18:51:49,969 - (192.168.50.4:45000) Building message with hash 4350413170758014762
+2024-03-05 18:51:51,974 - (192.168.50.4:45000) Building message with hash 1589411341762444045
+2024-03-05 18:51:52,318 - Error getting GPU usage: Not Supported
+2024-03-05 18:51:53,979 - (192.168.50.4:45000) Building message with hash 1083402690707425520
+2024-03-05 18:51:55,985 - (192.168.50.4:45000) Building message with hash 8986902625368222614
+2024-03-05 18:51:57,990 - (192.168.50.4:45000) Building message with hash 6993228893324334831
+2024-03-05 18:51:59,995 - (192.168.50.4:45000) Building message with hash 6059247635705762285
+2024-03-05 18:52:02,000 - (192.168.50.4:45000) Building message with hash -2711087412876620842
+2024-03-05 18:52:02,375 - Error getting GPU usage: Not Supported
+2024-03-05 18:52:04,005 - (192.168.50.4:45000) Building message with hash 5222161176873025680
+2024-03-05 18:52:06,010 - (192.168.50.4:45000) Building message with hash 4176663503613812651
+2024-03-05 18:52:08,016 - (192.168.50.4:45000) Building message with hash -811683280675960434
+2024-03-05 18:52:10,023 - (192.168.50.4:45000) Building message with hash -8110370374717808989
+2024-03-05 18:52:12,029 - (192.168.50.4:45000) Building message with hash 7787276091396366392
+2024-03-05 18:52:12,404 - Error getting GPU usage: Not Supported
+2024-03-05 18:52:14,034 - (192.168.50.4:45000) Building message with hash -5740826879125275576
+2024-03-05 18:52:16,039 - (192.168.50.4:45000) Building message with hash -97137400513251112
+2024-03-05 18:52:18,044 - (192.168.50.4:45000) Building message with hash -2233337754423361354
+2024-03-05 18:52:20,049 - (192.168.50.4:45000) Building message with hash 1932390977132052340
+2024-03-05 18:52:22,055 - (192.168.50.4:45000) Building message with hash -4278676881379360877
+2024-03-05 18:52:22,426 - Error getting GPU usage: Not Supported
+2024-03-05 18:52:24,060 - (192.168.50.4:45000) Building message with hash 1229181778158594788
+2024-03-05 18:52:26,065 - (192.168.50.4:45000) Building message with hash -2856277539938359774
+2024-03-05 18:52:28,071 - (192.168.50.4:45000) Building message with hash 184334223742172081
+2024-03-05 18:52:30,076 - (192.168.50.4:45000) Building message with hash -777808706262311002
+2024-03-05 18:52:32,082 - (192.168.50.4:45000) Building message with hash 6060535779316719619
+2024-03-05 18:52:32,453 - Error getting GPU usage: Not Supported
+2024-03-05 18:52:34,087 - (192.168.50.4:45000) Building message with hash 4327066990304888238
+2024-03-05 18:52:36,091 - (192.168.50.4:45000) Building message with hash 5024963690611642074
+2024-03-05 18:52:38,097 - (192.168.50.4:45000) Building message with hash -8825946702179240085
+2024-03-05 18:52:40,100 - (192.168.50.4:45000) Building message with hash -5319793109002840498
+2024-03-05 18:52:42,105 - (192.168.50.4:45000) Building message with hash -1529173920412815357
+2024-03-05 18:52:42,507 - Error getting GPU usage: Not Supported
+2024-03-05 18:52:44,110 - (192.168.50.4:45000) Building message with hash -9177494028941923332
+2024-03-05 18:52:46,115 - (192.168.50.4:45000) Building message with hash -1261500398246034971
+2024-03-05 18:52:48,126 - (192.168.50.4:45000) Building message with hash -5530385827984292462
+2024-03-05 18:52:50,130 - (192.168.50.4:45000) Building message with hash 7433322569877223698
+2024-03-05 18:52:52,137 - (192.168.50.4:45000) Building message with hash 7873449520548324508
+2024-03-05 18:52:52,526 - Error getting GPU usage: Not Supported
+2024-03-05 18:52:54,143 - (192.168.50.4:45000) Building message with hash -1998568677244928652
+2024-03-05 18:52:56,151 - (192.168.50.4:45000) Building message with hash 791253278205119779
+2024-03-05 18:52:58,156 - (192.168.50.4:45000) Building message with hash 6177334567491295720
+2024-03-05 18:53:00,162 - (192.168.50.4:45000) Building message with hash 4542849265216162418
+2024-03-05 18:53:02,169 - (192.168.50.4:45000) Building message with hash -1093872576925671051
+2024-03-05 18:53:02,556 - Error getting GPU usage: Not Supported
+2024-03-05 18:53:04,173 - (192.168.50.4:45000) Building message with hash -1478007566016850965
+2024-03-05 18:53:06,178 - (192.168.50.4:45000) Building message with hash -7679106585107133359
+2024-03-05 18:53:08,182 - (192.168.50.4:45000) Building message with hash 1800052361836586120
+2024-03-05 18:53:10,187 - (192.168.50.4:45000) Building message with hash -60354597966796755
+2024-03-05 18:53:12,192 - (192.168.50.4:45000) Building message with hash 6463132916047601213
+2024-03-05 18:53:12,588 - Error getting GPU usage: Not Supported
+2024-03-05 18:53:14,197 - (192.168.50.4:45000) Building message with hash -7587466110304385239
+2024-03-05 18:53:16,202 - (192.168.50.4:45000) Building message with hash -4919214119953241432
+2024-03-05 18:53:18,207 - (192.168.50.4:45000) Building message with hash -7848151938520411714
+2024-03-05 18:53:20,213 - (192.168.50.4:45000) Building message with hash -4216327561968876912

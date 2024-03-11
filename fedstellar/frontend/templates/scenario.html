@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+{% block page_title %}Scenario Management{% endblock %}
+{% block body %}
+{{ super() }}
+
+<!-- Modal confirm -->
+<div class="modal fade" id="confirm-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+            </div>
+            <div id="confirm-modal-body" class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                <button type="button" id="yes-button" class="btn btn-dark" data-dismiss="modal">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Model info -->
+<div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Information</h5>
+            </div>
+            <div id="info-modal-body" class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Understand</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h4>Deploy, analyze and monitor scenarios</h4>
+<hr>
+
+{% if scenario_running %}
+
+{% if scenario_completed %}
+<h4>There is a scenario completed.</h4>
+<p>The federation has reached the maximum number of rounds.</p>
+{% else %}
+<h4>There is a scenario running.</h4>
+{% endif %}
+<a id="new-scenario-btn" href="{{ url_for('fedstellar_scenario_deployment') }}" class="btn btn-dark">Deploy new scenario</a>
+{% if scenarios %}
+<a href="{{ url_for('fedstellar_scenario_statistics') }}" class="btn btn-light">Compare scenarios</a>
+{% endif %}
+
+<hr>
+
+<h3>Scenario</h3>
+<h5>Scenario name: <b id="scenario_name">{{ scenario_running[0] }}</b></h5>
+<h5>Scenario title: <b id="scenario_title">{{ scenario_running[3] }}</b></h5>
+<h5>Scenario description: <b id="scenario_description">{{ scenario_running[4] }}</b></h5>
+<h5>Scenario start time: <b id="scenario_start_time">{{ scenario_running[1] }}</b></h5>
+
+<a href="{{ url_for('fedstellar_stop_scenario', scenario_name=scenario_running[0]) }}" class="btn btn-danger">Stop scenario</a>
+<hr>
+
+{% else %}
+
+<h4>There are no deployed scenarios</h4>
+<a href="{{ url_for('fedstellar_scenario_deployment') }}" class="btn btn-dark">Deploy a scenario</a>
+{% if scenarios %}
+<a href="{{ url_for('fedstellar_scenario_statistics') }}" class="btn btn-light">Compare scenarios</a>
+{% endif %}
+
+{% endif %}
+
+{% if scenarios %}
+
+<h3>Scenarios in the database</h3>
+<div class="table-responsive">
+    <table id="table-scenarios" class="table small">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Start time</th>
+            <th>End time</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Network Subnet</th>
+            <th>Model</th>
+            <th>Dataset</th>
+            <th>Rounds</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        {% for name, start_time, end_time, title, description, status, network_subnet, model, dataset, rounds, role in scenarios %}
+        <tr id="scenario-vars">
+            <td id="name">{{ name }}</td>
+            <td id="start_time">{{ start_time }}</td>
+            <td id="end_time">{{ end_time }}</td>
+            <td id="title" class="truncate-text" data-toggle="tooltip" data-placement="bottom" data-container="body" title="{{ title }}">{{ title }}</td>
+            <td id="description" class="truncate-text" data-toggle="tooltip" data-placement="bottom" data-container="body" title="{{ description }}">{{ description }}</td>
+            <td id="network_subnet">{{ network_subnet }}</td>
+            <td id="model">{{ model }}</td>
+            <td id="dataset">{{ dataset }}</td>
+            <td id="rounds">{{ rounds }}</td>
+            <td id="role">{{ role }}</td>
+            {% if status == "running" %}
+            <td id="status"><span class="label label-success">Running</span></td>
+            {% elif status == "completed" %}
+            <td id="status"><span class="label label-warning">Completed</span></td>
+            {% else %}
+            <td id="status"><span class="label label-danger">Finished</span></td>
+            {% endif %}
+            <td class="td-icons">
+                <a href="{{ url_for('fedstellar_scenario_private', scenario_name=name) }}" class="label btn btn-dark">Private</a>
+                <a href="{{ url_for('fedstellar_scenario_monitoring', scenario_name=name) }}" class="label btn btn-dark">Monitor</a>
+                <a href="{{ url_for('fedstellar_scenario_statistics', scenario_name=name) }}" class="label btn btn-dark">Real-time metrics</a>
+                <a href="{{ url_for('fedstellar_scenario_download', scenario_name=name) }}" class="label btn btn-dark">Download</a>
+                {% if status == "running" %}
+                <a href="{{ url_for('fedstellar_stop_scenario', scenario_name=name) }}" class="label btn btn-danger">Stop scenario</a>
+                {% elif status == "completed" %}
+                <a href="{{ url_for('fedstellar_stop_scenario', scenario_name=name) }}" class="label btn btn-danger">Stop scenario</a>
+                {% else %}
+                <a id="remove-btn" data-scenario-name="{{ name }}" class="label btn btn-danger"><i class="fa fa-times"></i></a>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endif %}
+
+<script>
+    $(document).on('click', '#remove-btn', function () {
+        var scenario_name = $(this).data('scenario-name');
+        $('#confirm-modal').modal('show');
+        $('#confirm-modal .modal-title').text('Remove scenario');
+        $('#confirm-modal #confirm-modal-body').html('Are you sure you want to remove the scenario ' + scenario_name + '?<br><br><p style="color: #772953; font-weight: bold">Warning: this will remove the scenario from the database.</p>');
+        $('#confirm-modal #yes-button').click(function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '/scenario/' + scenario_name + '/remove', true);
+            xhr.send();
+            xhr.addEventListener("load", function () {
+                // When the request is done could be 401 or 301.
+                // If it is 401, the user is a demo and cannot remove the scenario.
+                // If it is 301, the scenario has been removed and the page is reloaded.
+                if (xhr.status != 401) {
+                    window.location.href = "/scenario/";
+                } else {
+                    // Hide the modal
+                    $('#confirm-modal').modal('hide');
+                    // If the user is a demo, show a modal with a message
+                    $('#confirm-modal').on('hidden.bs.modal', function () {
+                        $('#info-modal-body').html('You are not allowed to remove a scenario with demo role.');
+                        $('#info-modal').modal('show');
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+{% endblock %}

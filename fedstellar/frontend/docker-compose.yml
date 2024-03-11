@@ -1,0 +1,40 @@
+
+services:
+
+    fedstellar-frontend:
+        container_name: fedstellar-frontend
+        image: fedstellar-frontend
+        build: .
+        restart: unless-stopped
+        volumes:
+            - D:\Study\uzh\23HS\master_thesis\fedstellar-venv\fedstellar:/fedstellar
+            - /var/run/docker.sock:/var/run/docker.sock
+            - ./config/fedstellar:/etc/nginx/sites-available/default
+        environment:
+            - FEDSTELLAR_DEBUG=False
+            - SERVER_LOG=/fedstellar/app/logs/server.log
+            - FEDSTELLAR_LOGS_DIR=/fedstellar/app/logs/
+            - FEDSTELLAR_CONFIG_DIR=/fedstellar/app/config/
+            - FEDSTELLAR_MODELS_DIR=/fedstellar/app/models/
+            - FEDSTELLAR_ENV_PATH=/fedstellar/app/.env
+            - FEDSTELLAR_ROOT_HOST=D:\Study\uzh\23HS\master_thesis\fedstellar-venv\fedstellar
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+        ipc: host
+        privileged: true
+        ports:
+            - 6060:80
+            - 6065:8080
+        networks:
+            fedstellar-net-base:
+                ipv4_address: 192.168.100.100
+
+
+networks:
+    fedstellar-net-base:
+        name: fedstellar-net-base
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 192.168.100.1/24
+                  gateway: 192.168.100.1
