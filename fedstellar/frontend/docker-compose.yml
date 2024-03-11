@@ -7,7 +7,7 @@ services:
         build: .
         restart: unless-stopped
         volumes:
-            - D:\Study\uzh\23HS\master_thesis\fedstellar-venv\fedstellar:/fedstellar
+            - /mnt/ziye/fedstellar-venv-mtd/fedstellar-mtd:/fedstellar
             - /var/run/docker.sock:/var/run/docker.sock
             - ./config/fedstellar:/etc/nginx/sites-available/default
         environment:
@@ -17,14 +17,14 @@ services:
             - FEDSTELLAR_CONFIG_DIR=/fedstellar/app/config/
             - FEDSTELLAR_MODELS_DIR=/fedstellar/app/models/
             - FEDSTELLAR_ENV_PATH=/fedstellar/app/.env
-            - FEDSTELLAR_ROOT_HOST=D:\Study\uzh\23HS\master_thesis\fedstellar-venv\fedstellar
+            - FEDSTELLAR_ROOT_HOST=/mnt/ziye/fedstellar-venv-mtd/fedstellar-mtd
         extra_hosts:
             - "host.docker.internal:host-gateway"
         ipc: host
         privileged: true
         ports:
-            - 6060:80
-            - 6065:8080
+            - 6080:80
+            - 6085:8080
         networks:
             fedstellar-net-base:
                 ipv4_address: 192.168.100.100
