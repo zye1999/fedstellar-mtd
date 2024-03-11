@@ -367,7 +367,6 @@ class Node(BaseNode):
 
         
         # if self.aggregator != self.target_aggregation:
-        logging.info(f"({self.addr}) Reactive Dynamic aggregation function is enabled for round {self.round}. Randomly select an aggregation function for the next round.")
         logging.info(f"get_aggregated_models current aggregator is: {self.aggregator}")
         logging.info(f"get_aggregated_models target_aggregation is: {self.target_aggregation}")
         self.aggregator = self.target_aggregation
@@ -1094,7 +1093,7 @@ class Node(BaseNode):
             # dynamic aggregation function
             if self.round > 0:
                 if (self.is_dynamic_aggregation) and (self.dynamic_aggregation_mode == "Proactive"):
-                    logging.info(f"({self.addr}) Proactive Dynamic aggregation function is enabled for round {self.round}. Randomly select an aggregation function for the next round.")
+                    logging.info(f"({self.addr}) Dynamic aggregation function is enabled for round {self.round}. Randomly select an aggregation function for the next round.")
                     
                     self.target_aggregation = self.__randomly_select_aggregation_function()                    
                     logging.info(f"get_aggregated_models current aggregator is: {self.aggregator}")
@@ -1236,19 +1235,23 @@ class Node(BaseNode):
         results = self.learner.evaluate()
         logging.info(f"({self.addr}) Finished evaluating.")
         # Removed because it is not necessary to send metrics between nodes
+
         if results is not None:
-            logging.info(
-                f"({self.addr}) Evaluated. Losss: {results[0]}, Metric: {results[1]}."
-            )
-            # Send metrics
-            logging.info(f"({self.addr}) Broadcasting metrics.")
-            self._neighbors.broadcast_msg(
-                self._neighbors.build_msg(
-                    LearningNodeMessages.METRICS,
-                    [results[0], results[1]],
-                    round=self.round,
-                )
-            )
+            logging.info(f"({self.addr}) Results are: {results}")    
+
+        # if results is not None:
+        #     logging.info(
+        #         f"({self.addr}) Evaluated. Losss: {results[0]}, Metric: {results[1]}."
+        #     )
+        #     # Send metrics
+        #     logging.info(f"({self.addr}) Broadcasting metrics.")
+        #     self._neighbors.broadcast_msg(
+        #         self._neighbors.build_msg(
+        #             LearningNodeMessages.METRICS,
+        #             [results[0], results[1]],
+        #             round=self.round,
+        #         )
+        #     )
 
     ######################
     #    Round finish    #

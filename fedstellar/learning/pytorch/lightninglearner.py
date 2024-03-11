@@ -173,6 +173,13 @@ class LightningLearner(NodeLearner):
                 # self.__trainer = None
                 # self.log_validation_metrics(loss, metric, self.round)
                 # return loss, metric
+
+                # Zi Ye
+                # Begin
+                results = self.__trainer.test(self.model, self.data, verbose=True)
+                return results
+                # End
+
             else:
                 return None
         except Exception as e:
