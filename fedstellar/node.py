@@ -1237,7 +1237,10 @@ class Node(BaseNode):
         # Removed because it is not necessary to send metrics between nodes
 
         if results is not None:
-            logging.info(f"({self.addr}) Results are: {results}")    
+            logging.info(f"Round {self.round}, ({self.addr}) Results are: {results}")    
+        else:
+            logging.info(f"No results!")    
+
 
         # if results is not None:
         #     logging.info(

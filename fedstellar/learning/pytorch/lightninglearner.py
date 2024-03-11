@@ -164,9 +164,10 @@ class LightningLearner(NodeLearner):
     def evaluate(self):
         try:
             if self.epochs > 0:
-                self.create_trainer()
-                self.__trainer.test(self.model, self.data, verbose=True)
-                self.__trainer = None
+                # self.create_trainer()
+                # self.__trainer.test(self.model, self.data, verbose=True)
+                # self.__trainer = None
+
                 # results = self.__trainer.test(self.model, self.data, verbose=True)
                 # loss = results[0]["Test/Loss"]
                 # metric = results[0]["Test/Accuracy"]
@@ -176,7 +177,9 @@ class LightningLearner(NodeLearner):
 
                 # Zi Ye
                 # Begin
+                self.create_trainer()
                 results = self.__trainer.test(self.model, self.data, verbose=True)
+                self.__trainer = None
                 return results
                 # End
 

@@ -382,6 +382,9 @@
                                 <option selected>Proactive</option>
                                 <option>Reactive</option>
                             </select>
+                            <small id="dynamicAggHelp" class="form-text text-muted">
+                                <i id="dynamicAggHelpIcon" class="fa fa-info-circle"></i>
+                            </small>
                         </div>
                         <!-- End -->
 
@@ -876,7 +879,14 @@
         '                    <li>CNN: Convolutional neural network</li>\n' +
         '                    <li>RNN: Recurrent neural network</li>\n' +
         '                </ul>'
-        
+    // Zi Ye
+    // Begin
+    contentDynamicAggHelp = '<ul>\n' +
+        '                    <li>Proactive: Changes aggregation function randomly at each training round</li>\n' +
+        '                    <li>Reactive: When malicious nodes are detected/broadcasted, changes aggregation function.</li>\n' +
+        '                </ul>'
+    // End    
+
     $('#topologyCustomIcon').popover({
         title: 'Network topology',
         html: true,
@@ -931,6 +941,19 @@
         container: 'body',
         delay: { show: 500, hide: 100 },
     });
+
+    // Zi Ye
+    // Begin
+    $('#dynamicAggHelpIcon').popover({
+        title: 'DynamicAgg',
+        html: true,
+        placement: 'right',
+        content: contentDynamicAggHelp,
+        trigger: 'hover',
+        container: 'body',
+        delay: { show: 500, hide: 100 },
+    });
+    // End
 </script>
 
 <script>
