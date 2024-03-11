@@ -1,0 +1,15 @@
+tensorboard==2.15.1
+tensorboardx==2.6.2.2
+blinker==1.7.0
+flask==3.0.0
+flask-socketio==5.3.6
+eventlet==0.34.2
+pytest==7.4.3
+matplotlib==3.8.2
+python-dotenv==1.0.0
+setuptools==69.0.3
+networkx==3.2.1
+requests==2.31.0
+ansi2html==1.9.1
+gunicorn==21.2.0
+geopy==2.4.1

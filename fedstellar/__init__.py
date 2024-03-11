@@ -1,0 +1,9 @@
+__version__ = "2.0.0"
+__status__ = "Development"
+__license__ = "GPLv3"
+__credits__ = ["Enrique Tomás Martínez Beltrán & Pedro Guijas (base code from p2pfl)"]
+__maintainer__ = "Enrique Tomás Martínez Beltrán"
+__description__ = "Fedstellar: A Platform for Decentralized Federated Learning"
+__long_description__ = "Fedstellar: A Platform for Decentralized Federated Learning"
+__long_description_content_type__ = "text/markdown"
+__keywords__ = "federated learning, decentralized federated learning, machine learning, deep learning, neural networks"

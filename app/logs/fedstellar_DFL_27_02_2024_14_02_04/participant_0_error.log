@@ -1,0 +1,32 @@
+2024-02-27 14:05:27,798 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 2 / 1
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:05:30,730 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 2 / 1
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:06:16,853 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 3 / 2
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:06:19,456 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 3 / 2
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:07:07,896 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 4 / 3
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:07:08,190 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 4 / 3
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:07:53,893 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 5 / 4
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:07:56,950 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 5 / 4
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:08:43,034 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 6 / 5
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:08:45,224 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 6 / 5
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:09:34,811 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 7 / 6
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:09:34,906 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 7 / 6
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:10:21,407 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 8 / 7
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:10:24,574 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 8 / 7
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:11:10,380 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 9 / 8
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 14:11:12,885 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 9 / 8
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]

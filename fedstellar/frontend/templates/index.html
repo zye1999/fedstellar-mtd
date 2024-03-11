@@ -1,0 +1,565 @@
+{% extends "layout.html" %}
+{% block page_title %}Fedstellar: A Platform for Decentralized Federated Learning{% endblock %}
+{% block body %}
+{{ super() }}
+<div class="container" style="text-align: center">
+    <img id="fedstellar-logo"
+         src="{{ url_for('static', filename='img/fedstellar-logo.jpg') }}"
+         width="400"
+         height="100"
+         alt="Fedstellar Logo"
+         title="Fedstellar">
+</div>
+<br>
+<div class="col-md-12 container-shadow grey">
+    <div class="col-md-12">
+        <h3>Alerts and News</h3>
+        <p style="display: inline-block; margin-right: 10px;"><strong>Give us a star on GitHub! <i class="fa fa-star"></i></strong></p>
+        <a href="https://github.com/enriquetomasmb/fedstellar" target="_blank" style="display: inline-block; vertical-align: middle;">
+            <img alt="enriquetomasmb/fedstellar" src="https://img.shields.io/github/stars/enriquetomasmb/fedstellar?style=for-the-badge&logo=github&label=Fedstellar&color=success">
+        </a>
+        <hr class="styled">
+        <p style="display: inline-block; margin-right: 10px;"><strong>Fedstellar from our web domains:</strong></p>
+        <a href="https://fedstellar.dev" target="_blank" style="display: inline-block; vertical-align: middle;">fedstellar.dev</a> <i class="fa fa-globe"></i> /
+        <a href="https://fedstellar.eu" target="_blank" style="display: inline-block; vertical-align: middle;">fedstellar.eu</a> <i class="fa fa-globe"></i> /
+        <a href="https://fedstellar.com" target="_blank" style="display: inline-block; vertical-align: middle;">fedstellar.com</a> <i class="fa fa-globe"></i> /
+        <a href="https://federatedlearning.inf.um.es" target="_blank" style="display: inline-block; vertical-align: middle;">federatedlearning.inf.um.es</a> <i class="fa fa-globe"></i>
+
+        {% for alert in alerts %}
+            <div class="alert {{ 'alert-info' if alert['alert_type'] == 'info' else 'alert-warning' if alert['alert_type'] == 'warning' else 'alert-danger' }}">
+                <strong>[{{ alert['timestamp']|datetimeformat }}]  {{ alert['title'] }}:</strong> {{ alert['message'] }}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="col-md-12 container-shadow">
+    <div class="col-md-6">
+        <h3>Introduction</h3>
+        <p>Fedstellar is an innovative platform that facilitates the training of federated learning models in a decentralized fashion across many physical and virtualized devices. Also, the platform enables the creation of a standard approach for developing, deploying, and managing federated
+            applications.</p>
+        <p>The platform supports the establishment of federations comprising diverse devices, network topologies, and algorithms. It also provides sophisticated federation management tools and performance metrics to facilitate efficient learning process monitoring. This is achieved through
+            extensible
+            modules that offer data storage and asynchronous capabilities alongside efficient mechanisms for model training, communication, and comprehensive analysis for federation monitoring.
+        </p>
+        <p>The platform incorporates a modular architecture comprising three elements:</p>
+        <ul>
+            <li><b>Frontend</b>: A user-friendly frontend for experiment setup and monitoring.</li>
+            <li><b>Controller</b>: A controller for effective orchestration of operations.</li>
+            <li><b>Core</b>: A core component deployed in each device for model training and communication.</li>
+        </ul>
+        <p>Fedstellar is developed by <a href="https://enriquetomasmb.com/">Enrique Tomás Martínez Beltrán</a> in collaboration with the <a href="https://um.es/en">University of Murcia</a>, <a href="https://www.armasuisse.ch/">Armasuisse</a> and the <a href="https://www.uzh.ch/">University of Zurich
+            (UZH)</a>.</p>
+
+        <h3>Documentation</h3>
+        <p>The documentation of the platform is available <a href="https://fedstellar.enriquetomasmb.com/">here</a>. The documentation includes an <a href="https://fedstellar.enriquetomasmb.com/installation.html">installation guide</a> and an <a
+                href="https://fedstellar.enriquetomasmb.com/api/index.html">API reference</a>.</p>
+    </div>
+    <div class="col-md-6">
+        <h3>Functionality Demonstration</h3>
+        <p>The following video shows the functionality of the platform. It shows how to create a decentralized topology with different nodes using collaborative learning.</p>
+        <div class="video-container">
+            <iframe class="video" src="https://www.youtube-nocookie.com/embed/J_6OjNiIP3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12 container-shadow">
+    <h3>Publications</h3>
+    <p>Please cite the following publications if you use Fedstellar in your research</p>
+    <div class="publication">
+        <div class="publication-logo">
+            <img src="{{ url_for('static', filename='img/publications/eswa.gif') }}" alt="Fedstellar: A Platform for Decentralized Federated Learning">
+        </div>
+        <div class="publication-info">
+            <h4><a href="https://arxiv.org/abs/2306.09750">Fedstellar: A Platform for Decentralized Federated Learning</a></h4>
+            <p><b>Enrique Tomás Martínez Beltrán</b>, Ángel Luis Perales Gómez, Chao Feng, Pedro Miguel Sánchez Sánchez, Sergio López Bernal, Gérôme Bovet, Manuel Gil Pérez, Gregorio Martínez Pérez, Alberto Huertas Celdrán</p>
+            <button type="button" class="bibtex-button" onclick="window.open('https://doi.org/10.1016/j.eswa.2023.122861')">Paper</button>
+            <button type="button" class="bibtex-button" onclick="window.open('https://arxiv.org/abs/2306.09750')">Preprint</button>
+            <button type="button" class="bibtex-button" onclick="copyToClipboard('bibtex1')">Copy BibTeX</button>
+            <div id="bibtex1" style="display: none;">
+                {% raw %}
+                @article{MartinezBeltran:fedstellar:2024,
+                title = {{Fedstellar: A Platform for Decentralized Federated Learning}},
+                author = {Mart{\'i}nez Beltr{\'a}n, Enrique Tom{\'a}s and Perales G{\'o}mez, {\'A}ngel Luis and Feng, Chao and S{\'a}nchez S{\'a}nchez, Pedro Miguel and L{\'o}pez Bernal, Sergio and Bovet, G{\'e}r{\^o}me and Gil P{\'e}rez, Manuel and Mart{\'i}nez P{\'e}rez, Gregorio and Huertas
+                Celdr{\'a}n, Alberto},
+                year = 2024,
+                volume = {242},
+                issn = {0957-4174},
+	            pages = {122861},
+	            journal = {Expert Systems with Applications},
+  	            doi = {10.1016/j.eswa.2023.122861},
+	            preprint = {https://arxiv.org/abs/2306.09750}
+                abstract = {In 2016, Google proposed Federated Learning (FL) as a novel paradigm to train Machine Learning (ML) models across the participants of a federation while preserving data privacy. Since its birth, Centralized FL (CFL) has been the most used approach, where a central entity
+                aggregates participants' models to create a global one. However, CFL presents limitations such as communication bottlenecks, single point of failure, and reliance on a central server. Decentralized Federated Learning (DFL) addresses these issues by enabling decentralized model
+                aggregation and minimizing dependency on a central entity. Despite these advances, current platforms training DFL models struggle with key issues such as managing heterogeneous federation network topologies. To overcome these challenges, this paper presents Fedstellar, a novel
+                platform designed to train FL models in a decentralized, semi-decentralized, and centralized fashion across diverse federations of physical or virtualized devices. The Fedstellar implementation encompasses a web application with an interactive graphical interface, a controller for
+                deploying federations of nodes using physical or virtual devices, and a core deployed on each device which provides the logic needed to train, aggregate, and communicate in the network. The effectiveness of the platform has been demonstrated in two scenarios: a physical deployment
+                involving single-board devices such as Raspberry Pis for detecting cyberattacks, and a virtualized deployment comparing various FL approaches in a controlled environment using MNIST and CIFAR-10 datasets. In both scenarios, Fedstellar demonstrated consistent performance and
+                adaptability, achieving F1 scores of 91\%, 98\%, and 91.2\% using DFL for detecting cyberattacks and classifying MNIST and CIFAR-10, respectively, reducing training time by 32\% compared to centralized approaches.},
+                }
+                {% endraw %}
+            </div>
+        </div>
+    </div>
+    <div class="publication">
+        <div class="publication-logo">
+            <img src="{{ url_for('static', filename='img/publications/ijcai-23.png') }}" alt="Fedstellar: A Platform for Training Models in a Privacy-preserving and Decentralized Fashion">
+        </div>
+        <div class="publication-info">
+            <h4><a href="https://doi.org/10.24963/ijcai.2023/838">Fedstellar: A Platform for Training Models in a Privacy-preserving and Decentralized Fashion</a></h4>
+            <p><b>Enrique Tomás Martínez Beltrán</b>, Pedro Miguel Sánchez Sánchez, Sergio López Bernal, Gérôme Bovet, Manuel Gil Pérez, Gregorio Martínez Pérez, Alberto Huertas Celdrán</p>
+            <button type="button" class="bibtex-button" onclick="window.open('https://doi.org/10.24963/ijcai.2023/838')">Paper</button>
+            <button type="button" class="bibtex-button" onclick="copyToClipboard('bibtex2')">Copy BibTeX</button>
+            <div id="bibtex2" style="display: none;">
+                {% raw %}
+                @inproceedings{MartinezBeltran:fedstellar_demo:2023,
+                title = {{Fedstellar: A Platform for Training Models in a Privacy-preserving and Decentralized Fashion}},
+                author = {Mart{\'i}nez Beltr{\'a}n, Enrique Tom{\'a}s and S{\'a}nchez S{\'a}nchez, Pedro Miguel and L{\'o}pez Bernal, Sergio and Bovet, G{\'e}r{\^o}me and Gil P{\'e}rez, Manuel and Mart{\'i}nez P{\'e}rez, Gregorio and Huertas Celdr{\'a}n, Alberto},
+                year = 2023,
+                month = aug,
+                booktitle = {Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence, {IJCAI-23}},
+                publisher = {International Joint Conferences on Artificial Intelligence Organization},
+                pages = {7154--7157},
+                doi = {10.24963/ijcai.2023/838},
+                note = {Demo Track},
+                editor = {Edith Elkind},
+                abstract = {This paper presents Fedstellar, a platform for training decentralized Federated Learning (FL) models in heterogeneous topologies in terms of the number of federation participants and their connections. Fedstellar allows users to build custom topologies, enabling them to
+                control the aggregation of model parameters in a decentralized manner. The platform offers a Web application for creating, managing, and connecting nodes to ensure data privacy and provides tools to measure, monitor, and analyze the performance of the nodes. The paper describes the
+                functionalities of Fedstellar and its potential applications. To demonstrate the applicability of the platform, different use cases are presented in which decentralized, semi-decentralized, and centralized architectures are compared in terms of model performance, convergence time,
+                and network overhead when collaboratively classifying hand-written digits using the MNIST dataset.}
+                }
+                {% endraw %}
+            </div>
+
+        </div>
+    </div>
+    <div class="publication">
+        <div class="publication-logo">
+            <img src="{{ url_for('static', filename='img/publications/ieee.png') }}" alt="Decentralized Federated Learning: Fundamentals, State of the Art, Frameworks, Trends, and Challenges">
+        </div>
+        <div class="publication-info">
+            <h4><a href="https://arxiv.org/abs/2211.08413">Decentralized Federated Learning: Fundamentals, State of the Art, Frameworks, Trends, and Challenges</a></h4>
+            <p><b>Enrique Tomás Martínez Beltrán</b>, Mario Quiles Pérez, Pedro Miguel Sánchez Sánchez, Sergio López Bernal, Gérôme Bovet, Manuel Gil Pérez, Gregorio Martínez Pérez, Alberto Huertas Celdrán</p>
+            <button type="button" class="bibtex-button" onclick="window.open('https://doi.org/10.1109/COMST.2023.3315746')">Paper</button>
+            <button type="button" class="bibtex-button" onclick="window.open('https://arxiv.org/abs/2211.08413')">Preprint</button>
+            <button type="button" class="bibtex-button" onclick="copyToClipboard('bibtex3')">Copy BibTeX</button>
+            <div id="bibtex3" style="display: none;">
+                {% raw %}
+                @article{MartinezBeltran:DFL:2023,
+                title = {{Decentralized Federated Learning: Fundamentals, State of the Art, Frameworks, Trends, and Challenges}},
+                author = {Mart{\'i}nez Beltr{\'a}n, Enrique Tom{\'a}s and Quiles P{\'e}rez, Mario and S{\'a}nchez S{\'a}nchez, Pedro Miguel and L{\'o}pez Bernal, Sergio and Bovet, G{\'e}r{\^o}me and Gil P{\'e}rez, Manuel and Mart{\'i}nez P{\'e}rez, Gregorio and Huertas Celdr{\'a}n, Alberto},
+                year = 2023,
+                volume = {In press},
+                number = {1-1},
+                pages = {1-1},
+                journal = {IEEE Communications Surveys & Tutorials},
+                doi = {10.1109/COMST.2023.3315746},
+                preprint = {https://arxiv.org/abs/2211.08413},
+                abstract = {In recent years, Federated Learning (FL) has gained relevance in training collaborative models without sharing sensitive data. Since its birth, Centralized FL (CFL) has been the most common approach in the literature, where a central entity creates a global model.
+                However, a centralized approach leads to increased latency due to bottlenecks, heightened vulnerability to system failures, and trustworthiness concerns affecting the entity responsible for the global model creation. Decentralized Federated Learning (DFL) emerged to address these
+                concerns by promoting decentralized model aggregation and minimizing reliance on centralized architectures. However, despite the work done in DFL, the literature has not (i) studied the main aspects differentiating DFL and CFL; (ii) analyzed DFL frameworks to create and evaluate new
+                solutions; and (iii) reviewed application scenarios using DFL. Thus, this article identifies and analyzes the main fundamentals of DFL in terms of federation architectures, topologies, communication mechanisms, security approaches, and key performance indicators. Additionally, the
+                paper at hand explores existing mechanisms to optimize critical DFL fundamentals. Then, the most relevant features of the current DFL frameworks are reviewed and compared. After that, it analyzes the most used DFL application scenarios, identifying solutions based on the fundamentals
+                and frameworks previously defined. Finally, the evolution of existing DFL solutions is studied to provide a list of trends, lessons learned, and open challenges.}
+                }
+                {% endraw %}
+            </div>
+
+        </div>
+    </div>
+    <div class="publication">
+        <div class="publication-logo">
+            <img src="{{ url_for('static', filename='img/publications/arxiv.png') }}" alt="Mitigating Communications Threats in Decentralized Federated Learning through Moving Target Defense">
+        </div>
+        <div class="publication-info">
+            <h4><a href="https://arxiv.org/abs/2307.11730">Mitigating Communications Threats in Decentralized Federated Learning through Moving Target Defense</a></h4>
+            <p><b>Enrique Tomás Martínez Beltrán</b>, Pedro Miguel Sánchez Sánchez, Sergio López Bernal, Gérôme Bovet, Manuel Gil Pérez, Gregorio Martínez Pérez, Alberto Huertas Celdrán</p>
+            <button type="button" class="bibtex-button" onclick="window.open('https://arxiv.org/abs/2307.11730')">Preprint</button>
+            <button type="button" class="bibtex-button" onclick="copyToClipboard('bibtex4')">Copy BibTeX</button>
+            <div id="bibtex4" style="display: none;">
+                {% raw %}
+                @article{MartinezBeltran:DFL_mitigating_threats:2023,
+                title = {{Mitigating Communications Threats in Decentralized Federated Learning through Moving Target Defense}},
+                author = {Mart{\'i}nez Beltr{\'a}n, Enrique Tom{\'a}s and S{\'a}nchez S{\'a}nchez, Pedro Miguel and L{\'o}pez Bernal, Sergio and Bovet, G{\'e}r{\^o}me and Gil P{\'e}rez, Manuel and Mart{\'i}nez P{\'e}rez, Gregorio and Huertas Celdr{\'a}n, Alberto},
+                year = 2023,
+                url = {https://arxiv.org/abs/2307.11730},
+                journal = {arXiv preprint arXiv:2307.11730},
+                abstract = {The rise of Decentralized Federated Learning (DFL) has enabled the training of machine learning models across federated participants, fostering decentralized model aggregation and reducing dependence on a server. However, this approach introduces unique communication
+                security challenges that have yet to be thoroughly addressed in the literature. These challenges primarily originate from the decentralized nature of the aggregation process, the varied roles and responsibilities of the participants, and the absence of a central authority to oversee
+                and mitigate threats. Addressing these challenges, this paper first delineates a comprehensive threat model, highlighting the potential risks of DFL communications. In response to these identified risks, this work introduces a security module designed for DFL platforms to counter
+                communication-based attacks. The module combines security techniques such as symmetric and asymmetric encryption with Moving Target Defense (MTD) techniques, including random neighbor selection and IP/port switching. The security module is implemented in a DFL platform called
+                Fedstellar, allowing the deployment and monitoring of the federation. A DFL scenario has been deployed, involving eight physical devices implementing three security configurations: (i) a baseline with no security, (ii) an encrypted configuration, and (iii) a configuration integrating
+                both encryption and MTD techniques. The effectiveness of the security module is validated through experiments with the MNIST dataset and eclipse attacks. The results indicated an average F1 score of 95\%, with moderate increases in CPU usage (up to 63.2\% +-3.5\%) and network traffic
+                (230 MB +-15 MB) under the most secure configuration, mitigating the risks posed by eavesdropping or eclipse attacks.}
+                }
+                {% endraw %}
+            </div>
+
+        </div>
+    </div>
+    <div class="publication">
+        <div class="publication-logo">
+            <img src="{{ url_for('static', filename='img/publications/arxiv.png') }}" alt="TemporalFED: Detecting Cyberattacks in Industrial Time-Series Data Using Decentralized Federated Learning">
+        </div>
+        <div class="publication-info">
+            <h4><a href="https://arxiv.org/abs/2308.03554">TemporalFED: Detecting Cyberattacks in Industrial Time-Series Data Using Decentralized Federated Learning</a></h4>
+            <p>Ángel Luis Perales Gómez, <b>Enrique Tomás Martínez Beltrán</b>, Pedro Miguel Sánchez Sánchez, Alberto Huertas Celdrán</p>
+            <button type="button" class="bibtex-button" onclick="window.open('https://arxiv.org/abs/2308.03554')">Preprint</button>
+            <button type="button" class="bibtex-button" onclick="copyToClipboard('bibtex5')">Copy BibTeX</button>
+            <div id="bibtex5" style="display: none;">
+                {% raw %}
+                @article{PeralesGomez:temporalfed:2023,
+                title = {{TemporalFED: Detecting Cyberattacks in Industrial Time-Series Data Using Decentralized Federated Learning}},
+                author = {Perales G{\'o}mez, {\'A}ngel Luis and Mart{\'i}nez Beltr{\'a}n, Enrique Tom{\'a}s and S{\'a}nchez S{\'a}nchez, Pedro Miguel and Huertas Celdr{\'a}n, Alberto},
+                year = 2023,
+                url = {https://arxiv.org/abs/2308.03554},
+                journal = {arXiv preprint arXiv:2308.03554},
+                abstract = {Industry 4.0 has brought numerous advantages, such as increasing productivity through automation. However, it also presents major cybersecurity issues such as cyberattacks affecting industrial processes. Federated Learning (FL) combined with time-series analysis is a
+                promising cyberattack detection mechanism proposed in the literature. However, the fact of having a single point of failure and network bottleneck are critical challenges that need to be tackled. Thus, this article explores the benefits of the Decentralized Federated Learning (DFL)
+                in terms of cyberattack detection and resource consumption. The work presents TemporalFED, a software module for detecting anomalies in industrial environments using FL paradigms and time series. TemporalFED incorporates three components: Time Series Conversion, Feature Engineering,
+                and Time Series Stationary Conversion. To evaluate TemporalFED, it was deployed on Fedstellar, a DFL framework. Then, a pool of experiments measured the detection performance and resource consumption in a chemical gas industrial environment with different time-series configurations,
+                FL paradigms, and topologies. The results showcase the superiority of the configuration utilizing DFL and Semi-Decentralized Federated Learning (SDFL) paradigms, along with a fully connected topology, which achieved the best performance in anomaly detection. Regarding resource
+                consumption, the configuration without feature engineering employed less bandwidth, CPU, and RAM than other configurations.}
+                }
+                {% endraw %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12 container-shadow">
+    <h3>Contributors</h3>
+    <p>Meet the people who made Fedstellar possible</p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="contributor">
+                <div class="contributor-photo">
+                    <img src="{{ url_for('static', filename='img/contributors/enrique-tomas-martinez-beltran.jpg') }}" alt="Enrique Tomás Martínez Beltrán">
+                </div>
+                <div class="contributor-info">
+                    <h4>Enrique Tomás Martínez Beltrán</h4>
+                    <p><b>Ph.D. Student</b> in Computer Science at the <a href="https://www.um.es/">University of Murcia</a></p>
+                    <ul>
+                        <li>Fedstellar Platform: main contributor</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://enriquetomasmb.com/"><i class="fa fa-globe"></i></a>
+                        <a href="https://scholar.google.es/citations?user=jSSPyXUAAAAJ"><i class="fa fa-google"></i></a>
+                        <a href="mailto:enriquetomas@um.es"><i class="fa fa-envelope"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="contributor">
+                <div class="contributor-photo">
+                    <img src="{{ url_for('static', filename='img/contributors/angel-luis.jpg') }}" alt="Ángel Luis Perales Gómez">
+                </div>
+                <div class="contributor-info">
+                    <h4>Ángel Luis Perales Gómez</h4>
+                    <p><b>Ph.D.</b> in Computer Science at the <a href="https://www.um.es/">University of Murcia</a></p>
+                    <ul>
+                        <li>Fedstellar Platform: time series module</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://webs.um.es/angelluis.perales/"><i class="fa fa-globe"></i></a>
+                        <a href="https://scholar.google.com/citations?user=z5QMuokAAAAJ&hl=es"><i class="fa fa-google"></i></a>
+                        <a href="mailto:angelluis.perales@um.es"><i class="fa fa-envelope"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="contributor">
+                <div class="contributor-photo">
+                    <img src="{{ url_for('static', filename='img/contributors/chao-feng.jpeg') }}" alt="Chao Feng">
+                </div>
+                <div class="contributor-info">
+                    <h4>Chao Feng</h4>
+                    <p><b>Ph.D. Student</b> in Computer Science at the <a href="https://www.uzh.ch/">University of Zurich</a></p>
+                    <ul>
+                        <li>Fedstellar Platform: adversarial attacks module</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://www.csg.uzh.ch/staff/feng"><i class="fa fa-globe"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a>
+                        <a href="mailto:cfeng@ifi.uzh.ch"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="contributor">
+                <div class="contributor-photo">
+                    <img src="{{ url_for('static', filename='img/contributors/pedro-miguel.jpg') }}" alt="Pedro Miguel Sánchez Sánchez">
+                </div>
+                <div class="contributor-info">
+                    <h4>Pedro Miguel Sánchez Sánchez</h4>
+                    <p><b>Ph.D. Student</b> in Computer Science at the <a href="https://www.um.es/">University of Murcia</a></p>
+                    <ul>
+                        <li>Fedstellar Platform: advice</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-globe"></i></a>
+                        <a href="https://scholar.google.com/citations?user=RMS2xxkAAAAJ&hl=en"><i class="fa fa-google"></i></a>
+                        <a href="mailto:pedromiguel.sanchez@um.es"><i class="fa fa-envelope"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="contributor">
+                <div class="contributor-photo">
+                    <img src="{{ url_for('static', filename='img/contributors/sergio-lopez-bernal.png') }}" alt="Sergio López Bernal">
+                </div>
+                <div class="contributor-info">
+                    <h4>Sergio López Bernal</h4>
+                    <p><b>Ph.D.</b> in Computer Science at the <a href="https://www.um.es/">University of Murcia</a></p>
+                    <ul>
+                        <li>Fedstellar Platform: design</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://webs.um.es/slopez/"><i class="fa fa-globe"></i></a>
+                        <a href="https://scholar.google.com/citations?user=tebi39sAAAAJ"><i class="fa fa-google"></i></a>
+                        <a href="mailto:slopez@um.es"><i class="fa fa-envelope"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="contributor">
+                <div class="contributor-photo">
+                    <img src="{{ url_for('static', filename='img/contributors/gerome-bovet.jpeg') }}" alt="Gérôme Bovet">
+                </div>
+                <div class="contributor-info">
+                    <h4>Gérôme Bovet</h4>
+                    <p><b>Head of Data Science at Cyber-Defence Campus.</b> <a href="https://www.ar.admin.ch/">Office fédéral de l'armement armasuisse</a></p>
+                    <ul>
+                        <li>Fedstellar Platform: advice and funding</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-globe"></i></a>
+                        <a href="https://scholar.google.ch/citations?user=2KZnqU0AAAAJ"><i class="fa fa-google"></i></a>
+                        <a href="mailto:gerome.bovet@armasuisse.ch"><i class="fa fa-envelope"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="contributor">
+                <div class="contributor-photo">
+                    <img src="{{ url_for('static', filename='img/contributors/alberto-huertas.jpg') }}" alt="Alberto Huertas Celdrán">
+                </div>
+                <div class="contributor-info">
+                    <h4>Alberto Huertas Celdrán</h4>
+                    <p><b>Ph.D.</b> in Computer Science at the <a href="https://www.uzh.ch/">University of Zurich</a></p>
+                    <ul>
+                        <li>Fedstellar Platform: advice and design</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://www.csg.uzh.ch/staff/Alberto-Huertas"><i class="fa fa-globe"></i></a>
+                        <a href="https://scholar.google.com/citations?user=IFyGj20AAAAJ&hl=es&oi=ao"><i class="fa fa-google"></i></a>
+                        <a href="mailto:huertas@ifi.uzh.ch"><i class="fa fa-envelope"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="contributor">
+                <div class="contributor-photo">
+                    <img src="{{ url_for('static', filename='img/contributors/gregorio-martinez-perez.jpg') }}" alt="Gregorio Martínez Pérez">
+                </div>
+                <div class="contributor-info">
+                    <h4>Gregorio Martínez Pérez</h4>
+                    <p><b>Ph.D.</b> in Computer Science at the <a href="https://www.um.es/">University of Murcia</a></p>
+                    <ul>
+                        <li>Fedstellar Platform: advice and funding</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://webs.um.es/gregorio/"><i class="fa fa-globe"></i></a>
+                        <a href="http://scholar.google.com/citations?user=l1scgGQAAAAJ"><i class="fa fa-google"></i></a>
+                        <a href="mailto:gregorio@um.es"><i class="fa fa-envelope"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function copyToClipboard(id) {
+        var bibtex = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(bibtex)
+            .then(() => {
+                alert('BibTeX copied to clipboard');
+            })
+            .catch(err => {
+                alert('Error in copy: ' + err);
+            });
+    }
+</script>
+
+<style>
+
+    #page-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #page-title h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.5em;
+        color: #333;
+    }
+
+    #fedstellar-logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+</style>
+
+<style>
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+    }
+</style>
+
+<style>
+    .publication {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #ecf0f1;
+    }
+
+    .publication-logo img {
+        width: 100px;
+        height: auto;
+        margin-right: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .publication-logo img:hover {
+        transform: scale(1.1);
+    }
+
+    .publication-info h4 {
+        color: #772953;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .publication-info p {
+        color: #7f8c8d;
+        font-size: 14px;
+    }
+
+    .publication-info a {
+        color: #772953;
+        text-decoration: none;
+    }
+
+    .publication-info a:hover {
+        text-decoration: underline;
+    }
+
+    .bibtex-button {
+        background-color: #772953;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+        margin: 5px;
+    }
+
+    .bibtex-button:hover {
+        background-color: #2980b9;
+    }
+</style>
+
+<style>
+    .contributor {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #ecf0f1;
+    }
+
+    .contributor-photo img {
+        width: 100px;
+        height: auto;
+        margin-right: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .contributor-photo img:hover {
+        transform: scale(1.1);
+    }
+
+    .contributor-info h4 {
+        color: #772953;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .contributor-info a {
+        color: #772953;
+        text-decoration: none;
+    }
+
+    .contributor-info a:hover {
+        text-decoration: underline;
+    }
+
+    .social-icons a {
+        color: #9a5773;
+        margin-right: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .social-icons a:hover {
+        color: #772953;
+        transform: scale(1.1);
+    }
+</style>
+
+{% endblock %}

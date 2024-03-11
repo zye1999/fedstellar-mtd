@@ -1,0 +1,80 @@
+{
+  "scenario_title": "DFL CPU MTDREAC + Poisoning",
+  "scenario_description": "",
+  "simulation": true,
+  "federation": "DFL",
+  "topology": "Custom",
+  "nodes": {
+    "0": {
+      "id": 0,
+      "ip": "192.168.50.2",
+      "port": "45000",
+      "role": "aggregator",
+      "malicious": false,
+      "start": true
+    },
+    "1": {
+      "id": 1,
+      "ip": "192.168.50.3",
+      "port": "45000",
+      "role": "aggregator",
+      "malicious": false,
+      "start": false
+    },
+    "2": {
+      "id": 2,
+      "ip": "192.168.50.4",
+      "port": "45000",
+      "role": "aggregator",
+      "malicious": false,
+      "start": false
+    }
+  },
+  "n_nodes": 3,
+  "matrix": [
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ]
+  ],
+  "dataset": "MNIST",
+  "iid": true,
+  "model": "MLP",
+  "agg_algorithm": "FedAvg",
+  "rounds": "10",
+  "logginglevel": true,
+  "accelerator": "cpu",
+  "network_subnet": "192.168.50.1/24",
+  "network_gateway": "192.168.50.1",
+  "epochs": "3",
+  "attacks": "Model Poisoning",
+  "poisoned_node_percent": "50",
+  "poisoned_sample_percent": "0",
+  "poisoned_noise_percent": "50",
+  "with_reputation": true,
+  "is_dynamic_topology": false,
+  "is_dynamic_aggregation": true,
+  "dynamic_aggregation_mode": "Reactive",
+  "random_geo": true,
+  "latitude": "38.023522",
+  "longitude": "-1.174389",
+  "mobility": false,
+  "mobility_type": "both",
+  "radius_federation": "1000",
+  "scheme_mobility": "random",
+  "round_frequency": "1",
+  "mobile_participants_percent": "50",
+  "additional_participants": [],
+  "schema_additional_participants": "random"
+}

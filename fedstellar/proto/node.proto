@@ -1,0 +1,36 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+package node;
+
+message Message {
+    string source = 1;
+    int32 ttl = 2;
+    int64 hash = 3;
+    string cmd = 4;
+    repeated string args = 5;
+    optional int32 round = 6;
+}
+
+message Weights {
+    string source = 1;
+    int32 round = 2;
+    bytes weights = 3;
+    repeated string contributors = 4;
+    int64 weight = 5;
+}
+
+message HandShakeRequest {
+    string addr = 1;
+}
+
+message ResponseMessage {
+    optional string error = 1;
+}
+
+service NodeServices {
+    rpc handshake(HandShakeRequest) returns (ResponseMessage);
+    rpc disconnect(HandShakeRequest) returns (google.protobuf.Empty);
+    rpc send_message(Message) returns (ResponseMessage);
+    rpc add_model(Weights) returns (ResponseMessage);
+}

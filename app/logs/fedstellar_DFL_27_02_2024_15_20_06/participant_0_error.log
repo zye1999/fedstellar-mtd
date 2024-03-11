@@ -1,0 +1,860 @@
+2024-02-27 15:20:53,324 - Error getting GPU usage: No data
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:21:03,353 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:21:13,384 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:21:23,411 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:21:33,435 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:21:43,476 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:21:53,510 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:22:03,541 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:22:13,580 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:22:23,611 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:22:33,658 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:22:43,691 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:22:53,725 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:23:03,764 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:23:13,800 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:23:23,835 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:23:33,868 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:23:37,024 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 2 / 1
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:23:39,744 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 2 / 1
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:23:39,771 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 2 / 1
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:23:43,906 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:23:53,936 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:24:03,975 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:24:14,044 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:24:24,072 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:24:31,569 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 3 / 2
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:24:33,959 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 3 / 2
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:24:34,107 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:24:34,465 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 3 / 2
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:24:44,139 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:24:54,174 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:25:04,212 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:25:14,258 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:25:24,296 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:25:27,592 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 4 / 3
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:25:27,865 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 4 / 3
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:25:28,348 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 4 / 3
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:25:34,357 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:25:44,400 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:25:54,459 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:26:04,557 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:26:14,622 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:26:24,659 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:26:34,752 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:26:44,836 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:26:46,718 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 5 / 4
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:26:49,141 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 5 / 4
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:26:49,570 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 5 / 4
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:26:54,896 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:27:04,931 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:27:15,026 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:27:25,052 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:27:35,086 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:27:37,848 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 6 / 5
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:27:39,847 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 6 / 5
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:27:40,817 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 6 / 5
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:27:45,140 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:27:55,171 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:28:05,208 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:28:15,270 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:28:25,304 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:28:28,844 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 7 / 6
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:28:28,993 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 7 / 6
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:28:31,820 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 7 / 6
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:28:35,336 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:28:45,385 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:28:55,426 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:29:05,468 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:29:15,524 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:29:23,679 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 8 / 7
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:29:23,739 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 8 / 7
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:29:25,557 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:29:26,682 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 8 / 7
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:29:35,590 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:29:45,666 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:29:55,736 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:30:05,774 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:30:16,014 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:30:26,072 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:30:31,952 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 9 / 8
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:30:32,238 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 9 / 8
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:30:32,415 - (192.168.50.2:45000) Models ready in a late round. Ignored. 0 != 9 / 8
+[in /fedstellar/fedstellar/../fedstellar/node.py:427]
+2024-02-27 15:30:36,106 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:30:46,144 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:30:56,194 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:31:06,228 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:31:16,259 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:31:26,282 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:31:36,312 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:31:46,342 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:31:56,367 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:32:06,398 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:32:16,428 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:32:26,461 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:32:36,492 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:32:46,522 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:32:56,556 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:33:06,586 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:33:16,616 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:33:26,649 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:33:36,681 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:33:46,701 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:33:56,735 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:34:06,766 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:34:16,787 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:34:26,819 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:34:36,848 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:34:46,879 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:34:56,911 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:35:06,942 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:35:16,973 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:35:27,009 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:35:37,067 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:35:47,097 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:35:57,121 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:36:07,151 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:36:17,181 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:36:27,213 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:36:37,245 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:36:47,274 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:36:57,309 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:37:07,364 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:37:17,394 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:37:27,429 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:37:37,460 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:37:47,489 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:37:57,510 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:38:07,542 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:38:17,572 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:38:27,595 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:38:37,626 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:38:47,657 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:38:57,691 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:39:07,723 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:39:17,753 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:39:27,786 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:39:37,816 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:39:47,847 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:39:57,880 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:40:07,909 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:40:17,930 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:40:27,964 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:40:37,994 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:40:48,016 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:40:58,051 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:41:08,081 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:41:18,111 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:41:28,144 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:41:38,174 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:41:48,204 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:41:58,239 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:42:08,259 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:42:18,290 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:42:28,323 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:42:38,344 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:42:48,375 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:42:58,409 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:43:08,429 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:43:18,460 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:43:28,490 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:43:38,518 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:43:48,549 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:43:58,570 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:44:08,590 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:44:18,608 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:44:28,631 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:44:38,649 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:44:48,670 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:44:58,690 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:45:08,720 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:45:18,748 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:45:28,773 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:45:38,801 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:45:48,832 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:45:58,870 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:46:08,901 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:46:18,933 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:46:28,967 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:46:38,998 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:46:49,029 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:46:59,064 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:47:09,094 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:47:19,115 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:47:29,151 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:47:39,184 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:47:49,207 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:47:59,239 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:48:09,269 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:48:19,298 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:48:29,334 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:48:39,363 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:48:49,395 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:48:59,425 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:49:09,457 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:49:19,486 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:49:29,517 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:49:39,536 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:49:49,577 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:49:59,609 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:50:09,628 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:50:19,657 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:50:29,690 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:50:39,719 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:50:49,749 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:50:59,782 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:51:09,810 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:51:19,840 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:51:29,868 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:51:39,897 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:51:49,926 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:51:59,948 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:52:09,979 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:52:20,009 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:52:30,029 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:52:40,058 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:52:50,085 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:53:00,118 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:53:10,144 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:53:20,175 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:53:30,205 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:53:40,235 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:53:50,272 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:54:00,306 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:54:10,335 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:54:20,355 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:54:30,386 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:54:40,418 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:54:50,437 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:55:00,468 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:55:10,499 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:55:20,528 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:55:30,561 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:55:40,590 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:55:50,621 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:56:00,655 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:56:10,685 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:56:20,716 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:56:30,750 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:56:40,772 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:56:50,802 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:57:00,833 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:57:10,853 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:57:20,883 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:57:30,915 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:57:40,943 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:57:50,971 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:58:01,006 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:58:11,036 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:58:21,065 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:58:31,097 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:58:41,127 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:58:51,157 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:59:01,181 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:59:11,214 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:59:21,245 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:59:31,268 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:59:41,299 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 15:59:51,328 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:00:01,350 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:00:11,379 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:00:21,411 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:00:31,446 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:00:41,505 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:00:51,526 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:01:01,559 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:01:11,589 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:01:21,608 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:01:31,643 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:01:41,668 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:01:51,721 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:02:01,750 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:02:11,776 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:02:21,803 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:02:31,831 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:02:41,858 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:02:51,884 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:03:01,914 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:03:11,929 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:03:21,954 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:03:31,984 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:03:41,999 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:03:52,024 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:04:02,052 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:04:12,064 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:04:22,088 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:04:32,115 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:04:42,141 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:04:52,166 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:05:02,196 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:05:12,220 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:05:22,244 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:05:32,270 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:05:42,298 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:05:52,322 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:06:02,339 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:06:12,363 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:06:22,387 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:06:32,405 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:06:42,431 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:06:52,457 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:07:02,473 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:07:12,497 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:07:22,520 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:07:32,548 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:07:42,571 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:07:52,626 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:08:02,654 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:08:12,678 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:08:22,717 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:08:32,745 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:08:42,771 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:08:52,787 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:09:02,815 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:09:12,842 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:09:22,856 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:09:32,886 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:09:42,909 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:09:52,934 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:10:02,963 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:10:12,987 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:10:23,011 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:10:33,040 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:10:43,066 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:10:53,093 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:11:03,124 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:11:13,142 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:11:23,204 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:11:33,241 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:11:43,265 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:11:53,296 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:12:03,326 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:12:13,348 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:12:23,373 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:12:33,401 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:12:43,427 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:12:53,442 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:13:03,458 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:13:13,473 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:13:23,489 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:13:33,507 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:13:43,522 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:13:53,572 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:14:03,592 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:14:13,617 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:14:23,669 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:14:33,700 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:14:43,726 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:14:53,779 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:15:03,811 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:15:13,837 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:15:23,861 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:15:33,890 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:15:43,944 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:15:53,960 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:16:03,993 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:16:14,046 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:16:24,062 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:16:34,092 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:16:44,146 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:16:54,171 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:17:04,229 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:17:14,284 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:17:24,309 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:17:34,368 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:17:44,383 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:17:54,408 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:18:04,465 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:18:14,479 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:18:24,505 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:18:34,563 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:18:44,592 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:18:54,615 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:19:04,643 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:19:14,669 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:19:24,720 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:19:34,738 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:19:44,763 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:19:54,788 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:20:04,805 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:20:14,831 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:20:24,881 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:20:34,898 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:20:44,923 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:20:54,948 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:21:04,976 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:21:15,001 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:21:25,027 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:21:35,055 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:21:45,081 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:21:55,106 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:22:05,135 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:22:15,160 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:22:25,174 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:22:35,201 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:22:45,226 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:22:55,241 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:23:05,269 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:23:15,293 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:23:25,308 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:23:35,335 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:23:45,359 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:23:55,383 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:24:05,410 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:24:15,438 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:24:25,463 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:24:35,490 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:24:45,514 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:24:55,539 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:25:05,568 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:25:15,584 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:25:25,608 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:25:35,637 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:25:45,650 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:25:55,675 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:26:05,702 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:26:15,728 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:26:25,752 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:26:35,780 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:26:45,795 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:26:55,810 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:27:05,827 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:27:15,841 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:27:25,865 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:27:35,892 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:27:45,931 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:27:55,989 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:28:06,010 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:28:16,036 - Error getting GPU usage: Unknown Error
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:28:26,077 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
+2024-02-27 16:28:36,107 - Error getting GPU usage: Not Supported
+[in /fedstellar/fedstellar/../fedstellar/node.py:726]
