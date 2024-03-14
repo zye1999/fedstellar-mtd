@@ -30,6 +30,8 @@ from fedstellar.messages import LearningNodeMessages
 from fedstellar.proto import node_pb2
 from fedstellar.role import Role
 
+from fedstellar.attacks.poisoning.modelpoison import modelpoison
+
 os.environ['WANDB_SILENT'] = 'true'
 
 # Import the requests module
@@ -172,7 +174,14 @@ class Node(BaseNode):
         self.model_poisoning = model_poisoning
         self.poisoned_ratio = poisoned_ratio
         self.noise_type = noise_type
-        
+
+        # Zi Ye
+        # Begin
+        # Logging box with attack information
+        attack_msg = f"Model poisoning: {self.model_poisoning}\nPoisoned ratio: {self.poisoned_ratio}\nNoise type: {self.noise_type}"
+        print_msg_box(msg=attack_msg, indent=2, title="Attack information")
+        # End
+
         # Mobility environment
         self.mobility = self.config.participant["mobility_args"]["mobility"]
         self.mobility_type = self.config.participant["mobility_args"]["mobility_type"]
@@ -349,7 +358,7 @@ class Node(BaseNode):
 
 
     def __dynamic_aggregator(self, aggregated_models_weights, malicious_nodes):
-        logging.info(f"malicious detected at round {self.round}, change aggergation protocol!") if len(malicious_nodes) > 0 else logging.info(f"no malicious detected at round {self.round}, change aggergation protocol!")
+        logging.info(f"malicious detected at round {self.round}, change aggergation protocol!") if len(malicious_nodes) > 0 else logging.info(f"no malicious detected at round {self.round}!")
         # if self.aggregator != self.target_aggregation:
         #     logging.info(f"get_aggregated_models current aggregator is: {self.aggregator}")
         #     self.aggregator = self.target_aggregation
@@ -1093,7 +1102,7 @@ class Node(BaseNode):
             # dynamic aggregation function
             if self.round > 0:
                 if (self.is_dynamic_aggregation) and (self.dynamic_aggregation_mode == "Proactive"):
-                    logging.info(f"({self.addr}) Dynamic aggregation function is enabled for round {self.round}. Randomly select an aggregation function for the next round.")
+                    logging.info(f"({self.addr}) Proactive Dynamic aggregation function is enabled for round {self.round}. Randomly select an aggregation function for the next round.")
                     
                     self.target_aggregation = self.__randomly_select_aggregation_function()                    
                     logging.info(f"get_aggregated_models current aggregator is: {self.aggregator}")
@@ -1113,7 +1122,7 @@ class Node(BaseNode):
                             self.aggregator.add_model(
                                 submodel, [node], weights, source=self.get_name(), round=self.round
                             )
-                    # logging.info(f"get_aggregated_models current aggregator is: {self.aggregator}")
+                    logging.info(f"get_aggregated_models current aggregator(after change) is: {self.aggregator}")
                     
         # Finish round
         if self.round is not None:
@@ -1229,6 +1238,14 @@ class Node(BaseNode):
         logging.info(f"({self.addr}) Training...")
         self.learner.fit()
         logging.info(f"({self.addr}) Finished training.")
+
+        # model poison ###
+        if self.model_poisoning:
+            logging.info(f"({self.addr}) Poisoning model...")
+            model_param = self.learner.get_parameters()
+            poisoned_model_param = modelpoison(model_param, poisoned_ratio=self.poisoned_ratio,
+                                               noise_type=self.noise_type)
+            self.learner.set_parameters(poisoned_model_param)
 
     def __evaluate(self):
         logging.info(f"({self.addr}) Evaluating...")
