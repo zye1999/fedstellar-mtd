@@ -314,6 +314,7 @@ class Node(BaseNode):
         malicious_nodes = msg.args  # List of malicious nodes
         logging.info(f"({self.addr}) Received reputation from {msg.source} with malicious nodes {malicious_nodes}")
         if self.with_reputation:
+            # Zi Ye
             if len(malicious_nodes) > 0 and not self.__is_malicious and self.get_name() not in malicious_nodes:
                 if self.is_dynamic_topology:
                     self.__disrupt_connection_using_reputation(malicious_nodes)
@@ -324,9 +325,34 @@ class Node(BaseNode):
                 # Zi Ye                    
                 if (self.is_dynamic_aggregation) and (self.dynamic_aggregation_mode == "Reactive"):
                     logging.info(f"({self.addr}) (Reputation callback) Reactive Dynamic aggregation function is enabled for round {self.round}. Randomly select an aggregation function for the next round.")
+                    logging.info(f"({self.addr}) (Reputation callback) Direct neighbors: {self.get_neighbors(only_direct=True)} | Undirected neighbors: {self.get_neighbors(only_undirected=True)} at round {self.round}")
+                    
                     self.target_aggregation = self.__randomly_select_aggregation_function()
-                    self.__dynamic_aggregator(self.aggregator.get_aggregated_models_weights(), malicious_nodes)
+                    # self.__dynamic_aggregator(self.aggregator.get_aggregated_models_weights(), malicious_nodes)
 
+                    # 手动dynamic聚合
+                    aggregated_models_weights = self.aggregator.get_aggregated_models_weights()
+                    self.aggregator = self.target_aggregation
+                    self.aggregator.set_nodes_to_aggregate(self.__train_set)
+
+                    for subnodes in aggregated_models_weights.keys():
+                        sublist = subnodes.split()
+                        (submodel, weights) = aggregated_models_weights[subnodes]
+                        for node in sublist:
+                            # if node not in malicious_nodes:
+                            #     logging.info(f"{node} is not in malicious_nodes, adding to aggregator")
+                            #     self.aggregator.add_model(
+                            #         submodel, [node], weights, source=self.get_name(), round=self.round
+                            #     )
+                            # else:
+                            #     logging.info(f"{node} is in malicious_nodes, not adding to aggregator")
+                            
+                            self.aggregator.add_model(
+                                submodel, [node], weights, source=self.get_name(), round=self.round
+                            )
+                    
+                    logging.info(f"Round {self.round}, dynamic_aggregation finished, current aggregator is: {self.aggregator}")
+                    
 
     # Zi Ye
     def __randomly_select_aggregation_function(self):
@@ -348,8 +374,10 @@ class Node(BaseNode):
             # Get the current aggregation function
             if not hasattr(self, 'aggregator'):
                 current_aggregation_function = None
+                logging("current_aggregation_function is None")
             else:
                 current_aggregation_function = self.aggregator
+                logging.info(f"current_aggregation_function is {current_aggregation_function}")
 
             # Randomly select an aggregation function other than the current one
             selected_aggregation_function = random.choice([agg_func for agg_func in aggregation_functions.values() if agg_func != current_aggregation_function])
@@ -375,33 +403,22 @@ class Node(BaseNode):
         #                 )
         #     logging.info(f"get_aggregated_models current aggregator is: {self.aggregator}")
 
-
-        # aggregated_model_weights 这行可能有问题
-        aggregated_models_weights_new = self.aggregator.get_aggregated_models_weights()
-        for subnodes in aggregated_models_weights_new.keys():
-            for subnodes in stored_models.keys():
-                sublist = subnodes.split()
-                logging.info(f"({self.addr}) aggregated_models_weights_new sublists: {sublist}")
-                for node in sublist:
-                    # logging node info
-                    logging.info(f"({self.addr}) aggregated_models_weights_new Nodes info: {node}")
-
-        # if self.aggregator != self.target_aggregation:
         logging.info(f"get_aggregated_models current aggregator is: {self.aggregator}")
         logging.info(f"get_aggregated_models target_aggregation is: {self.target_aggregation}")
         logging.info(f"Train set: {self.__train_set}")
         
         # aggregated_model_weights and malicious nodes
-        logging.info(f"__dynamic_aggregator aggregated_models_weights_new is: {aggregated_models_weights_new}")
+        logging.info(f"__dynamic_aggregator aggregated_models_weights.keys() are: {aggregated_models_weights.keys()}")
         logging.info(f"__dynamic_aggregator malicious_nodes are: {malicious_nodes}")
 
+        # change aggregator
         self.aggregator = self.target_aggregation
         self.aggregator.set_nodes_to_aggregate(self.__train_set)
 
-        for subnodes in aggregated_models_weights_new.keys():
+        for subnodes in aggregated_models_weights.keys():
             sublist = subnodes.split()
             # logging.info(f"get_aggregated_models sublist is: {sublist}")
-            (submodel, weights) = aggregated_models_weights_new[subnodes]
+            (submodel, weights) = aggregated_models_weights[subnodes]
             for node in sublist:
                 # logging node info
                 # logging.info(f"get_aggregated_models node is: {node}")
@@ -413,7 +430,7 @@ class Node(BaseNode):
                 else:
                     logging.info(f"{node} is in malicious_nodes, not adding to aggregator")
 
-        # logging.info(f"get_aggregated_models current(after change) aggregator is: {self.aggregator}")
+        logging.info(f"get_aggregated_models current(after change) aggregator is: {self.aggregator}")
 
     def __stop_learning_callback(self, _):
         self.__stop_learning()
@@ -1120,34 +1137,45 @@ class Node(BaseNode):
         #     logging.info(f"get_aggregated_models current aggregator is: {self.aggregator}")
         #     logging.info(f"get_aggregated_models target_aggregation is: {self.target_aggregation}")
 
+        # Logging Neighbours
+        # if self.round is not None:
+        #     # log neighbors
+        #     logging.info(f"({self.addr}) Direct neighbors: {self.get_neighbors(only_direct=True)} | Undirected neighbors: {self.get_neighbors(only_undirected=True)} at round {self.round}")
+           
+
         # Proactive dynamic aggregation
         if self.round is not None:
             # Zi Ye
+            # log neighbors
             # dynamic aggregation function
             if self.round > 0:
                 if (self.is_dynamic_aggregation) and (self.dynamic_aggregation_mode == "Proactive"):
-                    logging.info(f"({self.addr}) Proactive Dynamic aggregation function is enabled for round {self.round}. Randomly select an aggregation function for the next round.")
-                    
-                    self.target_aggregation = self.__randomly_select_aggregation_function()                    
-                    logging.info(f"(proactive) get_aggregated_models current aggregator is: {self.aggregator}")
-                    logging.info(f"(proactive) get_aggregated_models target_aggregation is: {self.target_aggregation}")
+                    if not self.__is_malicious:
+                        logging.info(f"({self.addr}) Proactive Dynamic aggregation function is enabled for round {self.round}. Randomly select an aggregation function for the next round.")
+                        
+                        self.target_aggregation = self.__randomly_select_aggregation_function()                    
+                        logging.info(f"(proactive) get_aggregated_models current aggregator is: {self.aggregator}")
+                        logging.info(f"(proactive) get_aggregated_models target_aggregation is: {self.target_aggregation}")
 
-                    aggregated_models_weights = self.aggregator.get_aggregated_models_weights()
-                    logging.info(f"(proactive) {self.aggregator} aggregated_models_weights: {aggregated_models_weights}")
-                    # logging.info(f"Train set: {self.__train_set}")
+                        aggregated_models_weights = self.aggregator.get_aggregated_models_weights()
+                        logging.info(f"(proactive) {self.aggregator} aggregated_models_weights.keys(): {aggregated_models_weights.keys()}")
+                        logging.info(f"({self.addr}) (Proactive) Direct neighbors: {self.get_neighbors(only_direct=True)} | Undirected neighbors: {self.get_neighbors(only_undirected=True)} at round {self.round}")
+                        
+                        # logging.info(f"Train set: {self.__train_set}")
 
-                    self.aggregator = self.target_aggregation
-                    self.aggregator.set_nodes_to_aggregate(self.__train_set)
+                        self.aggregator = self.target_aggregation
+                        self.aggregator.set_nodes_to_aggregate(self.__train_set)
 
-                    for subnodes in aggregated_models_weights.keys():
-                        logging.info(f"(proactive) get_aggregated_models subnodes is: {subnodes}")
-                        sublist = subnodes.split()
-                        (submodel, weights) = aggregated_models_weights[subnodes]
-                        for node in sublist:
-                            self.aggregator.add_model(
-                                submodel, [node], weights, source=self.get_name(), round=self.round
-                            )
-                    logging.info(f"get_aggregated_models current aggregator(after change) is: {self.aggregator}")
+                        for subnodes in aggregated_models_weights.keys():
+                            # logging.info(f"(proactive) get_aggregated_models subnodes is: {subnodes}")
+                            sublist = subnodes.split()
+                            (submodel, weights) = aggregated_models_weights[subnodes]
+                            for node in sublist:
+                                logging.info(f"adding {node} to aggregator")
+                                self.aggregator.add_model(
+                                    submodel, [node], weights, source=self.get_name(), round=self.round
+                                )
+                        logging.info(f"get_aggregated_models current aggregator(after change) is: {self.aggregator}")
                     
         # Finish round
         if self.round is not None:
@@ -1343,8 +1371,8 @@ class Node(BaseNode):
         # Compare the model parameters to identify malicious nodes, and then broadcast to the rest of the topology
         # Functionality not implemented yet (ROADMAP 1.0)
         # ...
-        cossim_threshold = 0.5
-        loss_threshold = 0.5
+        cossim_threshold = 0.95
+        loss_threshold = 2.4
 
         current_models = {}
         for subnodes in aggregated_models_weights.keys():
@@ -1393,66 +1421,103 @@ class Node(BaseNode):
         )
 
     def get_aggregated_models(self, node):
-        """
-        Get the models that have been aggregated by a given node in the actual round.
+            """
+            Get the models that have been aggregated by a given node in the actual round.
 
-        Args:
-            node (str): Node to get the aggregated models from.
-        """
-        try:
-            # Zi Ye
-            if self.with_reputation and not self.__is_malicious:
-                malicious_nodes = []
-                # logging.info(f"({self.addr}) Stored models: {self.aggregator.get_aggregated_models_weights()}")
-                
+            Args:
+                node (str): Node to get the aggregated models from.
+
+            Returns:
+                list: List of aggregated models for the given node.
+
+            Raises:
+                KeyError: If no aggregated models are found for the given node in the current round.
+            """
+            try:
                 # Zi Ye
-                stored_models = self.aggregator.get_aggregated_models_weights()
-                for subnodes in stored_models.keys():
-                    sublist = subnodes.split()
-                    logging.info(f"({self.addr}) Stored models sublists: {sublist}")
-                    for node in sublist:
-                        # logging node info
-                        logging.info(f"({self.addr}) Stored models Nodes info: {node}")
-                        
-                
-                if self.round > 2:
-                    malicious_nodes, reputation = self.reputation_calculation(self.aggregator.get_aggregated_models_weights())
+                logging.info(f"calling get_aggregated_models() function at round {self.round}...")
+                # Zi Ye
+                if self.with_reputation:
+                    malicious_nodes = []
+                    # logging.info(f"({self.addr}) Stored models: {self.aggregator.get_aggregated_models_weights()}")
                     
                     # Zi Ye
-                    logging.info(f"({self.addr}) Malicious nodes at round {self.round}: {malicious_nodes}")
-                    logging.info(f"({self.addr}) Reputation score at round {self.round}: {reputation}")
-                    # Begin
-                    if len(malicious_nodes) > 0 and not self.__is_malicious:
-                        # logging self.__is_malicious
-                        logging.info(f"Node behavior: {'malicious' if self.__is_malicious else 'benign'}")
-                    # End
+                    stored_models = self.aggregator.get_aggregated_models_weights()
+                    sublist = []
+                    for subnodes in stored_models.keys():
+                        sublist.append(subnodes.split())
+                    logging.info(f"({self.addr}) Stored models sublists: {sublist}")
+                    logging.info(f"({self.addr}) Direct neighbors: {self.get_neighbors(only_direct=True)} | Undirected neighbors: {self.get_neighbors(only_undirected=True)} at round {self.round}")
+
+                    if self.round > 2 and not self.__is_malicious:
+                        malicious_nodes, reputation = self.reputation_calculation(self.aggregator.get_aggregated_models_weights())
+                        
+                        # Zi Ye
+                        logging.info(f"({self.addr}) Malicious nodes at round {self.round}: {malicious_nodes}")
+                        logging.info(f"({self.addr}) Reputation score(cossim, avg_loss) at round {self.round}: {reputation}")
+                        
+                        # Begin
+                        if len(malicious_nodes) > 0 and not self.__is_malicious:
+                            # logging self.__is_malicious
+                            logging.info(f"Node behavior: {'malicious' if self.__is_malicious else 'benign'}")
+                        # End
+                           
+                            # logging.info(f"({self.addr}) Malicious nodes at round {self.round}: {malicious_nodes}, excluding them from the aggregation...")
+                            
+                            self.send_reputation(malicious_nodes)
+                            
+                            # disrupt the connection with malicious nodes
+                            if self.is_dynamic_topology:
+                                self.__disrupt_connection_using_reputation(malicious_nodes)
+
+                            # if self.is_dynamic_aggregation and self.aggregator != self.target_aggregation:
+                            #     self.__dynamic_aggregator(self.aggregator.get_aggregated_models_weights(), malicious_nodes)
+
+                            # Zi Ye     
+                            if (self.is_dynamic_aggregation) and (self.dynamic_aggregation_mode == "Reactive"):
+                                logging.info(f"({self.addr}) (active detection) Reactive Dynamic aggregation function is enabled for round {self.round}. Randomly select an aggregation function for the next round.")
+                                logging.info(f"({self.addr}) (active detection) Direct neighbors: {self.get_neighbors(only_direct=True)} | Undirected neighbors: {self.get_neighbors(only_undirected=True)} at round {self.round}")
+                                
+                                self.target_aggregation = self.__randomly_select_aggregation_function()
+                                # self.__dynamic_aggregator(self.aggregator.get_aggregated_models_weights(), malicious_nodes)
+                                
+                                # 手动dynamic聚合
+                                aggregated_models_weights = self.aggregator.get_aggregated_models_weights()
+                                self.aggregator = self.target_aggregation
+                                self.aggregator.set_nodes_to_aggregate(self.__train_set)
+
+                                for subnodes in aggregated_models_weights.keys():
+                                    sublist = subnodes.split()
+                                    (submodel, weights) = aggregated_models_weights[subnodes]
+                                    for node in sublist:
+                                        # if node not in malicious_nodes:
+                                        #     logging.info(f"{node} is not in malicious_nodes, adding to aggregator")
+                                        #     self.aggregator.add_model(
+                                        #         submodel, [node], weights, source=self.get_name(), round=self.round
+                                        #     )
+                                        # else:
+                                        #     logging.info(f"{node} is in malicious_nodes, not adding to aggregator")
+                                        
+                                        self.aggregator.add_model(
+                                            submodel, [node], weights, source=self.get_name(), round=self.round
+                                        )
+                                
+                                logging.info(f"Round {self.round}, dynamic_aggregation finished, current aggregator is: {self.aggregator}")
 
 
-                        # logging.info(f"({self.addr}) Malicious nodes at round {self.round}: {malicious_nodes}, excluding them from the aggregation...")
-                        self.send_reputation(malicious_nodes)
-                        # disrupt the connection with malicious nodes
-                        if self.is_dynamic_topology:
-                            self.__disrupt_connection_using_reputation(malicious_nodes)
-
-                        # if self.is_dynamic_aggregation and self.aggregator != self.target_aggregation:
-                        #     self.__dynamic_aggregator(self.aggregator.get_aggregated_models_weights(), malicious_nodes)
-
-                        # Zi Ye     
-                        if (self.is_dynamic_aggregation) and (self.dynamic_aggregation_mode == "Reactive"):
-                            logging.info(f"({self.addr}) (active detection) Reactive Dynamic aggregation function is enabled for round {self.round}. Randomly select an aggregation function for the next round.")
-                            self.target_aggregation = self.__randomly_select_aggregation_function()
-                            self.__dynamic_aggregator(self.aggregator.get_aggregated_models_weights(), malicious_nodes)
-
-                # Exclude malicious nodes from the aggregation
-                # Introduce the malicious nodes in the list of aggregated models. This is done to avoid the malicious nodes to be included in the aggregation
-                models_aggregated = self.__models_aggregated[node]
-                models_aggregated = list(set(list(models_aggregated) + malicious_nodes))
-                logging.info(f"({self.addr}) Aggregated models at round {self.round}: {models_aggregated}")
-                return models_aggregated
-            else:
-                return self.__models_aggregated[node]
-        except KeyError:
-            return []
+                    # Exclude malicious nodes from the aggregation
+                    # Introduce the malicious nodes in the list of aggregated models. This is done to avoid the malicious nodes to be included in the aggregation
+                    models_aggregated = self.__models_aggregated[node]
+                    logging.info(f"({self.addr}) Aggregated models at round (before malicious nodes) {self.round}: {models_aggregated}")
+                    models_aggregated = list(set(list(models_aggregated) + malicious_nodes))
+                    logging.info(f"({self.addr}) Aggregated models at round (after malicious nodes) {self.round}: {models_aggregated}")
+                    return models_aggregated
+                else:
+                    return self.__models_aggregated[node]
+            except KeyError:
+                # logging.error(f"({self.addr}) No aggregated models for {node} in round {self.round}")
+                # logging.info(f"failed to call get_aggregated_models() function at round {self.round}...")
+                return []
 
     def __gossip_model_aggregation(self):
         # Anonymous functions
