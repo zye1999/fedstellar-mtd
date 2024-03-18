@@ -1104,20 +1104,6 @@ class Node(BaseNode):
             self.__wait_aggregated_model()
             self.__gossip_model_difusion()
 
-        # log info
-        # if self.round is not None:
-        #     logging.info(f"({self.addr}) Round {self.round}:")
-        # logging.info(f"{self.aggregator} aggregated_models_weights: {self.aggregator.get_aggregated_models_weights()}")
-                       
-        #     logging.info(f"get_aggregated_models current aggregator is: {self.aggregator}")
-        #     logging.info(f"get_aggregated_models target_aggregation is: {self.target_aggregation}")
-
-        # Logging Neighbours
-        # if self.round is not None:
-        #     # log neighbors
-        #     logging.info(f"({self.addr}) Direct neighbors: {self.get_neighbors(only_direct=True)} | Undirected neighbors: {self.get_neighbors(only_undirected=True)} at round {self.round}")
-           
-
         # Proactive dynamic aggregation
         if self.round is not None:
             # Zi Ye
