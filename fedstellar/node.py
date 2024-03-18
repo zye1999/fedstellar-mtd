@@ -1409,19 +1409,23 @@ class Node(BaseNode):
             KeyError: If no aggregated models are found for the given node in the current round.
         """
         try:
-            # Zi Ye
-            logging.info(f"calling get_aggregated_models() function at round {self.round}...")
-            # Zi Ye
             if self.with_reputation:
                 malicious_nodes = []
                 # logging.info(f"({self.addr}) Stored models: {self.aggregator.get_aggregated_models_weights()}")
 
                 # Zi Ye
+                # Get the stored models from the aggregator
                 stored_models = self.aggregator.get_aggregated_models_weights()
+
+                # Create a sublist to store the subnodes of each stored model
                 sublist = []
                 for subnodes in stored_models.keys():
                     sublist.append(subnodes.split())
+
+                # Log the sublist of stored models for debugging
                 logging.info(f"({self.addr}) Stored models sublists: {sublist}")
+
+                # Log the direct and undirected neighbors for debugging
                 logging.info(f"({self.addr}) Direct neighbors: {self.get_neighbors(only_direct=True)} | Undirected neighbors: {self.get_neighbors(only_undirected=True)} at round {self.round}")
 
                 if self.round > 2 and not self.__is_malicious:
