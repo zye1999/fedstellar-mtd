@@ -417,18 +417,18 @@ class Node(BaseNode):
             sublist = subnodes.split()
             (submodel, weights) = aggregated_models_weights[subnodes]
             for node in sublist:
-                # if node not in malicious_nodes:
-                #     logging.info(f"{node} is not in malicious_nodes, adding to aggregator")
-                #     self.aggregator.add_model(
-                #         submodel, [node], weights, source=self.get_name(), round=self.round
-                #     )
-                # else:
-                #     logging.info(f"{node} is in malicious_nodes, not adding to aggregator")
+                if node not in malicious_nodes:
+                    logging.info(f"{node} is not in malicious_nodes, adding to aggregator")
+                    self.aggregator.add_model(
+                        submodel, [node], weights, source=self.get_name(), round=self.round
+                    )
+                else:
+                    logging.info(f"{node} is in malicious_nodes, not adding to aggregator")
                 
-                logging.info(f"adding {node} to aggregator")
-                self.aggregator.add_model(
-                    submodel, [node], weights, source=self.get_name(), round=self.round
-                )
+                # logging.info(f"adding {node} to aggregator")
+                # self.aggregator.add_model(
+                #     submodel, [node], weights, source=self.get_name(), round=self.round
+                # )
         # Log the current aggregator after the change
         logging.info(f"get_aggregated_models current(after change) aggregator is: {self.aggregator}")
 
@@ -1438,7 +1438,6 @@ class Node(BaseNode):
 
                 # Log the direct and undirected neighbors for debugging
                 logging.info(f"({self.addr}) Direct neighbors: {self.get_neighbors(only_direct=True)} | Undirected neighbors: {self.get_neighbors(only_undirected=True)} at round {self.round}")
-
                 
                 logging.info(f"({self.addr}) get_aggregated_models node: {node}")
                 logging.info(f"({self.addr}) get_aggregated_models self.__models_aggregated[node] {self.__models_aggregated[node]}")
@@ -1469,7 +1468,6 @@ class Node(BaseNode):
                             logging.info(f"({self.addr}) (active detection) Calling dynamic aggregator function with the aggregated models and malicious nodes.")
                             self.__dynamic_aggregator(self.aggregator.get_aggregated_models_weights(), malicious_nodes)
                             # dyamic_aggregator success
-                            
                             logging.info(f"({self.addr}) (active detection) Dynamic aggregation function is successful for round {self.round}.")
                 # Exclude malicious nodes from the aggregation
                 # Introduce the malicious nodes in the list of aggregated models. This is done to avoid the malicious nodes to be included in the aggregation
@@ -1483,7 +1481,7 @@ class Node(BaseNode):
                 return self.__models_aggregated[node]
         except KeyError:
             # logging KeyError
-            logging.info(f"KeyError: {KeyError.with_traceback()}")
+            # logging.info(f"KeyError: {KeyError.with_traceback()}")
             logging.info(f"failed to call get_aggregated_models() function at round {self.round}...")
             return []
 
