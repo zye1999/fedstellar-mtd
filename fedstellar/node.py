@@ -237,13 +237,16 @@ class Node(BaseNode):
         # Aggregators
         if self.config.participant["aggregator_args"]["algorithm"] == "FedAvg":
             self.aggregator = FedAvg(node_name=self.get_name(), config=self.config)
+            self.aggregator_name = "FedAvg"
         elif self.config.participant["aggregator_args"]["algorithm"] == "Krum":
             self.aggregator = Krum(node_name=self.get_name(), config=self.config)
+            self.aggregator_name = "Krum"
         elif self.config.participant["aggregator_args"]["algorithm"] == "Median":
             self.aggregator = Median(node_name=self.get_name(), config=self.config)
+            self.aggregator_name = "Median"
         elif self.config.participant["aggregator_args"]["algorithm"] == "TrimmedMean":
             self.aggregator = TrimmedMean(node_name=self.get_name(), config=self.config)
-        
+            self.aggregator_name = "TrimmedMean"
         self.__trusted_nei = []
         self.__is_malicious = False
         if self.config.participant["adversarial_args"]["attacks"] != "No Attack":
@@ -338,26 +341,44 @@ class Node(BaseNode):
             The selected aggregation function
         """
         # Define the pool of aggregation functions
-        aggregation_functions = {
-            "FedAvg": FedAvg(node_name=self.get_name(), config=self.config),
-            "Krum": Krum(node_name=self.get_name(), config=self.config),
-            "Median": Median(node_name=self.get_name(), config=self.config),
-            "TrimmedMean": TrimmedMean(node_name=self.get_name(), config=self.config)
-        }
+        # aggregation_functions = {
+        #     "FedAvg": FedAvg(node_name=self.get_name(), config=self.config),
+        #     "Krum": Krum(node_name=self.get_name(), config=self.config),
+        #     "Median": Median(node_name=self.get_name(), config=self.config),
+        #     "TrimmedMean": TrimmedMean(node_name=self.get_name(), config=self.config)
+        # }
+        
+        aggregation_functions = ["FedAvg", "Krum","Median", "TrimmedMean"]
 
         # Get the current aggregation function
         if not hasattr(self, 'aggregator'):
-            current_aggregation_function = None
-            logging.info(f"current_aggregation_function is None")
+            current_aggregation_function_name = None
+            logging.info(f"current_aggregation_function_name is None")
         else:
-            current_aggregation_function = self.aggregator
-            logging.info(f"current_aggregation_function is {current_aggregation_function}")
+            current_aggregation_function_name = self.aggregator_name
+            logging.info(f"current_aggregation_function_name is {current_aggregation_function_name}")
 
         # Randomly select an aggregation function other than the current one
-        selected_aggregation_function = current_aggregation_function
-        while selected_aggregation_function == current_aggregation_function:
-            selected_aggregation_function = random.choice(list(aggregation_functions.values()))
-
+        selected_aggregation_function_name = current_aggregation_function_name
+        while selected_aggregation_function_name == current_aggregation_function_name:
+            selected_aggregation_function_name = random.choice(aggregation_functions)
+        
+        logging.info(f"selected_aggregation_function_name is {selected_aggregation_function_name}")
+        
+        
+        if selected_aggregation_function_name == "FedAvg":
+            selected_aggregation_function = FedAvg(node_name=self.get_name(), config=self.config)
+            self.aggregator_name = "FedAvg"
+        elif selected_aggregation_function_name == "Krum":
+            selected_aggregation_function = Krum(node_name=self.get_name(), config=self.config)
+            self.aggregator_name = "Krum"
+        elif selected_aggregation_function_name == "Median":
+            selected_aggregation_function = Median(node_name=self.get_name(), config=self.config)
+            self.aggregator_name = "Median"
+        elif selected_aggregation_function_name == "TrimmedMean":
+            selected_aggregation_function = TrimmedMean(node_name=self.get_name(), config=self.config)
+            self.aggregator_name = "TrimmedMean"
+            
         return selected_aggregation_function
 
 
@@ -396,14 +417,18 @@ class Node(BaseNode):
             sublist = subnodes.split()
             (submodel, weights) = aggregated_models_weights[subnodes]
             for node in sublist:
-                if node not in malicious_nodes:
-                    logging.info(f"{node} is not in malicious_nodes, adding to aggregator")
-                    self.aggregator.add_model(
-                        submodel, [node], weights, source=self.get_name(), round=self.round
-                    )
-                else:
-                    logging.info(f"{node} is in malicious_nodes, not adding to aggregator")
-
+                # if node not in malicious_nodes:
+                #     logging.info(f"{node} is not in malicious_nodes, adding to aggregator")
+                #     self.aggregator.add_model(
+                #         submodel, [node], weights, source=self.get_name(), round=self.round
+                #     )
+                # else:
+                #     logging.info(f"{node} is in malicious_nodes, not adding to aggregator")
+                
+                logging.info(f"adding {node} to aggregator")
+                self.aggregator.add_model(
+                    submodel, [node], weights, source=self.get_name(), round=self.round
+                )
         # Log the current aggregator after the change
         logging.info(f"get_aggregated_models current(after change) aggregator is: {self.aggregator}")
 
@@ -1442,9 +1467,7 @@ class Node(BaseNode):
                 # Exclude malicious nodes from the aggregation
                 # Introduce the malicious nodes in the list of aggregated models. This is done to avoid the malicious nodes to be included in the aggregation
                 models_aggregated = self.__models_aggregated[node]
-                logging.info(f"({self.addr}) Aggregated models at round (before malicious nodes) {self.round}: {models_aggregated}")
                 models_aggregated = list(set(list(models_aggregated) + malicious_nodes))
-                logging.info(f"({self.addr}) Aggregated models at round (after malicious nodes) {self.round}: {models_aggregated}")
                 return models_aggregated
             else:
                 return self.__models_aggregated[node]
