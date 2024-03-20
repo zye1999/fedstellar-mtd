@@ -92,7 +92,8 @@ class Neighbors:
         hs = hash(
             str(cmd) + str(args) + str(datetime.now()) + str(random.randint(0, 100000))
         )
-        logging.info(f"({self.__self_addr}) Building message with hash {hs}")
+        # logging.info(f"({self.__self_addr}) Building message with hash {hs}")
+        # logging.info(f"({self.__self_addr}) Building message with hash {cmd}: {args} at round {round} ")
         args = [str(a) for a in args]
         return node_pb2.Message(
             source=self.__self_addr,
@@ -123,7 +124,7 @@ class Neighbors:
                 self.remove(nei, disconnect_msg=True)
             else:
                 pass
-                # logging.debug(
+                # logging.info(
                 #     f"({self.__self_addr}) send_message (gRPC) | Message {msg.cmd} sent to {nei} with hash {msg.hash}"
                 # )
         except Exception as e:

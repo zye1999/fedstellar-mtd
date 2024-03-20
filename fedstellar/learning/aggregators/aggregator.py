@@ -91,11 +91,13 @@ class Aggregator:
         self.__models = {}
         try:
             logging.info(f"({self.node_name}) clear | Releasing __finish_aggregation_lock.")
-            self.__finish_aggregation_lock.release()
+            if self.__finish_aggregation_lock.locked():
+                self.__finish_aggregation_lock.release()
         except:
             pass
         logging.info(f"({self.node_name}) clear | Releasing __agg_lock.")
-        self.__agg_lock.release()
+        if self.__agg_lock.locked():
+            self.__agg_lock.release()
 
     def get_round(self):
         """
@@ -147,7 +149,8 @@ class Aggregator:
                 f"({self.node_name}) Received a model without a list of contributors."
             )
             logging.info(f"({self.node_name}) add_model (aggregator) | Releasing __agg_lock.")
-            self.__agg_lock.release()
+            if self.__agg_lock.locked():
+                self.__agg_lock.release()
             return None
 
         # Check again if the round is the same as the current one, if not, ignore the model (it is from a previous round)
@@ -173,7 +176,8 @@ class Aggregator:
                 self.__models = {" ".join(nodes): (model, 1)}
                 self.__waiting_aggregated_model = False
                 logging.info(f"({self.node_name}) add_model (aggregator) | Releasing __finish_aggregation_lock.")
-                self.__finish_aggregation_lock.release()
+                if self.__finish_aggregation_lock.locked():
+                    self.__finish_aggregation_lock.release()
                 return contributors
             else:
                 logging.info(
@@ -202,10 +206,12 @@ class Aggregator:
                         # Finish agg
                         logging.info(
                             f"({self.node_name}) add_model (aggregator) | Releasing __finish_aggregation_lock.")
-                        self.__finish_aggregation_lock.release()
+                        if self.__finish_aggregation_lock.locked():
+                            self.__finish_aggregation_lock.release()
                         # Unlock and Return
                         logging.info(f"({self.node_name}) add_model (aggregator) | Releasing __agg_lock.")
-                        self.__agg_lock.release()
+                        if self.__agg_lock.locked():
+                            self.__agg_lock.release()
                         return self.get_aggregated_models()
 
                     elif all([n not in self.get_aggregated_models() for n in nodes]):
@@ -224,11 +230,13 @@ class Aggregator:
                             )
                             logging.info(
                                 f"({self.node_name}) add_model (aggregator) | Releasing __finish_aggregation_lock.")
-                            self.__finish_aggregation_lock.release()
+                            if self.__finish_aggregation_lock.locked():
+                                self.__finish_aggregation_lock.release()
 
                         # Unlock and Return
                         logging.info(f"({self.node_name}) add_model (aggregator) | Releasing __agg_lock.")
-                        self.__agg_lock.release()
+                        if self.__agg_lock.locked():
+                            self.__agg_lock.release()
                         return self.get_aggregated_models()
 
                     elif any([n in self.get_aggregated_models() for n in nodes]):
@@ -261,11 +269,13 @@ class Aggregator:
                             )
                             logging.info(
                                 f"({self.node_name}) BETA add_model (aggregator) | Releasing __finish_aggregation_lock.")
-                            self.__finish_aggregation_lock.release()
+                            if self.__finish_aggregation_lock.locked():
+                                self.__finish_aggregation_lock.release()
 
                         # Unlock and Return
                         logging.info(f"({self.node_name}) BETA add_model (aggregator) | Releasing __agg_lock.")
-                        self.__agg_lock.release()
+                        if self.__agg_lock.locked():
+                            self.__agg_lock.release()
                         return self.get_aggregated_models()
 
                     # elif any([n in self.get_aggregated_models() for n in nodes]):
@@ -333,7 +343,8 @@ class Aggregator:
                     f"({self.node_name}) add_model (aggregator) | Received a model when is not needed."
                 )
             logging.info(f"({self.node_name}) add_model (aggregator) | Releasing __agg_lock.")
-            self.__agg_lock.release()
+            if self.__agg_lock.locked():
+                self.__agg_lock.release()
             return None
 
     def wait_and_get_aggregation(self):
@@ -354,7 +365,8 @@ class Aggregator:
         self.__finish_aggregation_lock.acquire(timeout=timeout)
         try:
             logging.info(f"({self.node_name}) wait_and_get_aggregation | Releasing __finish_aggregation_lock.")
-            self.__finish_aggregation_lock.release()
+            if self.__finish_aggregation_lock.locked():
+                self.__finish_aggregation_lock.release()
         except:
             pass
 
